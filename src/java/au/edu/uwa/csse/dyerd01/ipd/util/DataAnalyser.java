@@ -1,7 +1,7 @@
 package au.edu.uwa.csse.dyerd01.ipd.util;
 
 import au.edu.uwa.csse.dyerd01.ipd.framework.evolution.EvolutionResult;
-import java.io.*;
+import java.io.File;
 
 /**
  * Utility for analysing the data in a data file.
@@ -26,15 +26,15 @@ public class DataAnalyser
         int acvCount = 0;
             
         // Add up totals.
-        for (int i = 0; i < results.length; i++)
+        for (EvolutionResult result : results)
         {
-            aggregateAverage += results[i].getAveragePayOff();
-            aggregateFitness += results[i].getFitness();
-            aggregateAgainstFixed += results[i].getAverageAgainstFixedPlayer();
-            aggregateFixedPlayerAverage += results[i].getFixedPlayerAverage();
-            aggregateFitnessRatio += results[i].getAverageRatio();
-                
-            int[] classifications = results[i].getClassifications();
+            aggregateAverage += result.getAveragePayOff();
+            aggregateFitness += result.getFitness();
+            aggregateAgainstFixed += result.getAverageAgainstFixedPlayer();
+            aggregateFixedPlayerAverage += result.getFixedPlayerAverage();
+            aggregateFitnessRatio += result.getAverageRatio();
+
+            int[] classifications = result.getClassifications();
             for (int j = 0; j < counts.length; j++)
             {
                 counts[j] += classifications[j];
@@ -66,15 +66,15 @@ public class DataAnalyser
         int[] diffs = new int[counts.length];
         int advDiffs = 0;
         int acvDiffs = 0;
-        for (int i = 0; i < results.length; i++)
+        for (EvolutionResult result : results)
         {
-            averageDiffs += Math.abs(averageAverage - results[i].getAveragePayOff());
-            fitnessDiffs += Math.abs(fitnessAverage - results[i].getFitness());
-            againstFixedDiffs += Math.abs(averageAgainstFixed - results[i].getAverageAgainstFixedPlayer());
-            fixedDiffs += Math.abs(fixedPlayerAverage - results[i].getFixedPlayerAverage());
-            ratioDiffs += Math.abs(ratioAverage - results[i].getAverageRatio());
-                
-            int[] classifications = results[i].getClassifications();
+            averageDiffs += Math.abs(averageAverage - result.getAveragePayOff());
+            fitnessDiffs += Math.abs(fitnessAverage - result.getFitness());
+            againstFixedDiffs += Math.abs(averageAgainstFixed - result.getAverageAgainstFixedPlayer());
+            fixedDiffs += Math.abs(fixedPlayerAverage - result.getFixedPlayerAverage());
+            ratioDiffs += Math.abs(ratioAverage - result.getAverageRatio());
+
+            int[] classifications = result.getClassifications();
             // Calculate diffs.
             for (int j = 0; j < classifications.length; j++)
             {

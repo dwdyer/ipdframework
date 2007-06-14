@@ -2,6 +2,7 @@
 package au.edu.uwa.csse.dyerd01.ipd.framework;
 
 import java.util.ArrayList;
+import java.util.List;
 
 /**
  * Encapsulates the full history of any previous iterations of a single head-to-head IPD
@@ -12,7 +13,7 @@ public class GameHistory
 {
     private final Player player1;
     private final Player player2;
-    private ArrayList previousIterations = new ArrayList();
+    private List<HistoryEntry> previousIterations = new ArrayList<HistoryEntry>();
     private int player1AggregatePayOff;
     private int player2AggregatePayOff;
     
@@ -57,7 +58,7 @@ public class GameHistory
      */
     public Action getPlayerActionForIteration(Player player, int iterationNo)
     {
-        HistoryEntry iteration = (HistoryEntry) previousIterations.get(iterationNo);
+        HistoryEntry iteration = previousIterations.get(iterationNo);
         if (player == player1)
         {
             return iteration.player1Action;
@@ -100,7 +101,7 @@ public class GameHistory
     
     public PayOff getPlayerPayOffForIteration(Player player, int iterationNo)
     {
-        HistoryEntry iteration = (HistoryEntry) previousIterations.get(iterationNo);
+        HistoryEntry iteration = previousIterations.get(iterationNo);
         if (player == player1)
         {
             return iteration.player1PayOff;
@@ -166,7 +167,7 @@ public class GameHistory
     public GameHistory getPlayer1History()
     {
         GameHistory clone = new GameHistory(player1, null);
-        clone.previousIterations = new ArrayList(previousIterations);
+        clone.previousIterations = new ArrayList<HistoryEntry>(previousIterations);
         return clone;
     }
 
@@ -174,7 +175,7 @@ public class GameHistory
     public GameHistory getPlayer2History()
     {
         GameHistory clone = new GameHistory(null, player2);
-        clone.previousIterations = new ArrayList(previousIterations);
+        clone.previousIterations = new ArrayList<HistoryEntry>(previousIterations);
         return clone;
     }
     

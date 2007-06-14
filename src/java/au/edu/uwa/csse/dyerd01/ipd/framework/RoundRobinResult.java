@@ -5,14 +5,16 @@ import java.util.ArrayList;
 import java.util.Collections;
 import java.util.Comparator;
 import java.util.HashMap;
+import java.util.List;
+import java.util.Map;
 
 /**
  * @author Daniel Dyer
  */
 public class RoundRobinResult extends HeadToHeadResult
 {
-    private final ArrayList headToHeadResults = new ArrayList();
-    private final HashMap opponentMap = new HashMap();
+    private final List<HeadToHeadResult> headToHeadResults = new ArrayList<HeadToHeadResult>();
+    private final Map<Player, HeadToHeadResult> opponentMap = new HashMap<Player, HeadToHeadResult>();
     
     public RoundRobinResult(Player player)
     {
@@ -38,17 +40,17 @@ public class RoundRobinResult extends HeadToHeadResult
     
     public HeadToHeadResult getHeadToHeadResult(int index)
     {
-        return (HeadToHeadResult) headToHeadResults.get(index);
+        return headToHeadResults.get(index);
     }
     
     
     public HeadToHeadResult getHeadToHeadResult(Player opponent)
     {
-        return (HeadToHeadResult) opponentMap.get(opponent);
+        return opponentMap.get(opponent);
     }
     
     
-    public void sortResults(Comparator comparator)
+    public void sortResults(Comparator<HeadToHeadResult> comparator)
     {
         Collections.sort(headToHeadResults, comparator);
     }

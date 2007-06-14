@@ -1,7 +1,9 @@
 // $Header: $
 package au.edu.uwa.csse.dyerd01.ipd.strategies;
 
-import au.edu.uwa.csse.dyerd01.ipd.framework.*;
+import au.edu.uwa.csse.dyerd01.ipd.framework.Action;
+import au.edu.uwa.csse.dyerd01.ipd.framework.PayOff;
+import au.edu.uwa.csse.dyerd01.ipd.framework.Player;
 import org.apache.log4j.Logger;
 
 /**

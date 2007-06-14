@@ -2,11 +2,16 @@
 package au.edu.uwa.csse.dyerd01.ipd.gui;
 
 import au.edu.uwa.csse.dyerd01.ipd.framework.RoundRobinResult;
-import java.awt.*;
-import javax.swing.*;
-import javax.swing.tree.TreeModel;
-import net.sourceforge.anguish.sortabletable.*;
-import net.sourceforge.anguish.treetable.*;
+import java.awt.BorderLayout;
+import java.awt.Component;
+import javax.swing.BorderFactory;
+import javax.swing.JPanel;
+import javax.swing.JScrollPane;
+import javax.swing.JTable;
+import net.sourceforge.anguish.sortabletable.SortCriterion;
+import net.sourceforge.anguish.treetable.AbstractTreeTableCellRenderer;
+import net.sourceforge.anguish.treetable.TreeTable;
+import net.sourceforge.anguish.treetable.TreeTableModel;
 
 /**
  * @author Daniel Dyer

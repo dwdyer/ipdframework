@@ -44,8 +44,8 @@
     <javac srcdir="${src.dir}/java"
            destdir="${classes.dir}"
            classpathref="base.path"
-           source="1.4"
-           target="1.4"
+           source="1.5"
+           target="1.5"
            debug="on"
            optimize="off"
            deprecation="on"/>
@@ -100,7 +100,7 @@
       version="true"
       windowtitle="IPD Framework API Documentation"
       doctitle="IPD Framework API Documentation"
-      additionalparam="-source 1.4"
+      additionalparam="-source 1.5"
       >
       <link offline="true" href="http://java.sun.com/j2se/1.4.2/docs/api/" packagelistLoc="${etc.dir}/package-lists/j2se"/>
       <link offline="true" href="http://anguish.sourceforge.net/docs/api/" packagelistLoc="${etc.dir}/package-lists/anguish"/>

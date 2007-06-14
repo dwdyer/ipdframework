@@ -1,8 +1,12 @@
 // $Header: $
 package au.edu.uwa.csse.dyerd01.ipd.gui;
 
-import java.awt.*;
-import javax.swing.*;
+import java.awt.BorderLayout;
+import javax.swing.BorderFactory;
+import javax.swing.JComponent;
+import javax.swing.JPanel;
+import javax.swing.JScrollPane;
+import javax.swing.JTable;
 
 /**
  * Custom panel used for displaying the data (results or in-process data)

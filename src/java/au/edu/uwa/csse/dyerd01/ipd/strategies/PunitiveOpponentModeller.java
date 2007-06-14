@@ -1,7 +1,8 @@
 // $Header: $
 package au.edu.uwa.csse.dyerd01.ipd.strategies;
 
-import au.edu.uwa.csse.dyerd01.ipd.framework.*;
+import au.edu.uwa.csse.dyerd01.ipd.framework.AbstractOpponentModeller;
+import au.edu.uwa.csse.dyerd01.ipd.framework.OpponentModel;
 
 /**
  * Tries to maximise winning margin over opponent.

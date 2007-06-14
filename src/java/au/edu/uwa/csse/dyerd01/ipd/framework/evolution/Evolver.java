@@ -1,9 +1,18 @@
 // $Header: $
 package au.edu.uwa.csse.dyerd01.ipd.framework.evolution;
 
-import au.edu.uwa.csse.dyerd01.ipd.framework.*;
-import au.edu.uwa.csse.dyerd01.ipd.strategies.*;
-import java.io.*;
+import au.edu.uwa.csse.dyerd01.ipd.framework.Player;
+import au.edu.uwa.csse.dyerd01.ipd.framework.RandomNumberGenerator;
+import au.edu.uwa.csse.dyerd01.ipd.framework.RoundRobinResult;
+import au.edu.uwa.csse.dyerd01.ipd.framework.TournamentManager;
+import au.edu.uwa.csse.dyerd01.ipd.strategies.ApproximatingOpponentModeller;
+import au.edu.uwa.csse.dyerd01.ipd.strategies.Gradual;
+import au.edu.uwa.csse.dyerd01.ipd.strategies.Grim;
+import au.edu.uwa.csse.dyerd01.ipd.strategies.Pavlov;
+import au.edu.uwa.csse.dyerd01.ipd.strategies.TitForTat;
+import java.io.File;
+import java.io.FileInputStream;
+import java.io.IOException;
 import java.util.Arrays;
 import java.util.Comparator;
 import java.util.EventListener;

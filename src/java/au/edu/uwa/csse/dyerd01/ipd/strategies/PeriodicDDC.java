@@ -1,7 +1,7 @@
 // $Header: $
 package au.edu.uwa.csse.dyerd01.ipd.strategies;
 
-import au.edu.uwa.csse.dyerd01.ipd.framework.*;
+import au.edu.uwa.csse.dyerd01.ipd.framework.Action;
 
 /**
  * @author Daniel Dyer

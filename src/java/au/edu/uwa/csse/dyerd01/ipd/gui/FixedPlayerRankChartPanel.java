@@ -2,12 +2,15 @@
 package au.edu.uwa.csse.dyerd01.ipd.gui;
 
 import au.edu.uwa.csse.dyerd01.ipd.framework.evolution.EvolutionResult;
-import java.awt.*;
-import javax.swing.*;
+import java.awt.BorderLayout;
+import javax.swing.JPanel;
 import org.apache.log4j.Logger;
-import org.jfree.chart.*;
+import org.jfree.chart.ChartFactory;
+import org.jfree.chart.ChartPanel;
+import org.jfree.chart.JFreeChart;
 import org.jfree.chart.axis.NumberAxis;
-import org.jfree.chart.plot.*;
+import org.jfree.chart.plot.PlotOrientation;
+import org.jfree.chart.plot.XYPlot;
 import org.jfree.data.CategoryTableXYDataset;
 
 public class FixedPlayerRankChartPanel extends JPanel

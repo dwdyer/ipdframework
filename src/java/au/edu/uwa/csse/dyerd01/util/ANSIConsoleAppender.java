@@ -1,7 +1,9 @@
 // $Header:  $
 package au.edu.uwa.csse.dyerd01.util;
 
-import org.apache.log4j.*;
+import org.apache.log4j.ConsoleAppender;
+import org.apache.log4j.Layout;
+import org.apache.log4j.Priority;
 import org.apache.log4j.spi.LoggingEvent;
 
 /**
@@ -56,7 +58,7 @@ public class ANSIConsoleAppender extends ConsoleAppender
     public ANSIConsoleAppender()
     {
         // For the moment turn off ANSI codes on Windows, don't seem to work.
-        coloursOn = System.getProperty("os.name").toUpperCase().indexOf("WINDOWS") < 0;
+        coloursOn = !System.getProperty("os.name").toUpperCase().contains("WINDOWS");
     }
 
 

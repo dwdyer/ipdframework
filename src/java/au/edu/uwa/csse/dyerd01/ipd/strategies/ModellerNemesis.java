@@ -1,7 +1,10 @@
 // $Header: $
 package au.edu.uwa.csse.dyerd01.ipd.strategies;
 
-import au.edu.uwa.csse.dyerd01.ipd.framework.*;
+import au.edu.uwa.csse.dyerd01.ipd.framework.AbstractPlayer;
+import au.edu.uwa.csse.dyerd01.ipd.framework.Action;
+import au.edu.uwa.csse.dyerd01.ipd.framework.GameHistory;
+import au.edu.uwa.csse.dyerd01.ipd.framework.RandomNumberGenerator;
 
 /**
  * Implements a strategy that can't be beaten by a modeller that attempts to maximise its own

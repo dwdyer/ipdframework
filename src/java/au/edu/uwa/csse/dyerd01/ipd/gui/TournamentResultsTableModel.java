@@ -1,10 +1,12 @@
 // $Header: $
 package au.edu.uwa.csse.dyerd01.ipd.gui;
 
-import au.edu.uwa.csse.dyerd01.ipd.framework.*;
+import au.edu.uwa.csse.dyerd01.ipd.framework.HeadToHeadResult;
+import au.edu.uwa.csse.dyerd01.ipd.framework.RoundRobinResult;
 import java.util.Arrays;
-import javax.swing.table.*;
-import net.sourceforge.anguish.sortabletable.*;
+import net.sourceforge.anguish.sortabletable.RowComparator;
+import net.sourceforge.anguish.sortabletable.SortCriterion;
+import net.sourceforge.anguish.sortabletable.SortableTableModel;
 import net.sourceforge.anguish.treetable.AbstractTreeTableModel;
 import net.sourceforge.anguish.treetable.TreeTableModel;
 
@@ -14,7 +16,7 @@ import net.sourceforge.anguish.treetable.TreeTableModel;
 public class TournamentResultsTableModel extends AbstractTreeTableModel implements SortableTableModel
 {
     private static final String[] COLUMN_NAMES = new String[]{"Player", "Iterations", "Aggregate Pay-Off", "Aggregate Opponent Pay-Off", "Margin", "Av. Pay-Off"};
-    private static final Class[] COLUMN_TYPES = new Class[]{TreeTableModel.class, Integer.class, Integer.class, Integer.class, Integer.class, Double.class};
+    private static final Class<?>[] COLUMN_TYPES = new Class[]{TreeTableModel.class, Integer.class, Integer.class, Integer.class, Integer.class, Double.class};
     public static final int PLAYER_COLUMN = 0;
     public static final int ITERATIONS_COLUMN = 1;
     public static final int PAYOFF_COLUMN = 2;
@@ -44,7 +46,7 @@ public class TournamentResultsTableModel extends AbstractTreeTableModel implemen
     }
     
     
-    public Class getColumnClass(int column)
+    public Class<?> getColumnClass(int column)
     {
         return COLUMN_TYPES[column];
     }
@@ -69,23 +71,23 @@ public class TournamentResultsTableModel extends AbstractTreeTableModel implemen
             }
             case ITERATIONS_COLUMN:
             {
-                return new Integer(record.getIterations());
+                return record.getIterations();
             }
             case PAYOFF_COLUMN:
             {
-                return new Integer(record.getAggregatePayOff());
+                return record.getAggregatePayOff();
             }
             case OPPONENT_PAYOFF_COLUMN:
             {
-                return new Integer(record.getAggregateOpponentPayOff());
+                return record.getAggregateOpponentPayOff();
             }
             case MARGIN_COLUMN:
             {
-                return new Integer(record.getMargin());
+                return record.getMargin();
             }
             case AVERAGE_PAYOFF_COLUMN:
             {
-                return new Double(record.getAveragePayOff());
+                return record.getAveragePayOff();
             }
             default:
             {
@@ -99,9 +101,9 @@ public class TournamentResultsTableModel extends AbstractTreeTableModel implemen
     public int getSize()
     {
         int size = data.length;
-        for (int i = 0; i < data.length; i++)
+        for (RoundRobinResult result : data)
         {
-            size += data[i].getHeadToHeadResultCount();
+            size += result.getHeadToHeadResultCount();
         }
         return size;
     }
@@ -148,7 +150,7 @@ public class TournamentResultsTableModel extends AbstractTreeTableModel implemen
     
     public boolean isColumnSortable(int column)
     {
-        Class type = getColumnClass(column);
+        Class<?> type = getColumnClass(column);
         return Comparable.class.isAssignableFrom(type) || Boolean.class.isAssignableFrom(type);
     }
     
@@ -162,9 +164,9 @@ public class TournamentResultsTableModel extends AbstractTreeTableModel implemen
     {
         rowComparator.setCriteria(criteria);
         Arrays.sort(data, rowComparator);
-        for (int i = 0; i < data.length; i++)
+        for (RoundRobinResult result : data)
         {
-            data[i].sortResults(rowComparator);
+            result.sortResults(rowComparator);
         }
         fireTreeStructureChanged(this, new Object[]{getRoot()}, null, null);
     }

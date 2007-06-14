@@ -1,12 +1,36 @@
 // $Header: $
 package au.edu.uwa.csse.dyerd01.ipd.gui;
 
-import au.edu.uwa.csse.dyerd01.ipd.framework.*;
+import au.edu.uwa.csse.dyerd01.ipd.framework.Player;
+import au.edu.uwa.csse.dyerd01.ipd.framework.RoundRobinResult;
+import au.edu.uwa.csse.dyerd01.ipd.framework.TournamentManager;
 import au.edu.uwa.csse.dyerd01.ipd.framework.evolution.EvolutionListener;
 import au.edu.uwa.csse.dyerd01.ipd.framework.evolution.EvolutionResult;
-import java.awt.*;
-import java.awt.event.*;
-import javax.swing.*;
+import java.awt.BorderLayout;
+import java.awt.Font;
+import java.awt.Frame;
+import java.awt.GridBagConstraints;
+import java.awt.GridBagLayout;
+import java.awt.Insets;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
+import java.awt.event.ItemEvent;
+import java.awt.event.ItemListener;
+import javax.swing.BorderFactory;
+import javax.swing.ButtonGroup;
+import javax.swing.DefaultListModel;
+import javax.swing.JButton;
+import javax.swing.JCheckBox;
+import javax.swing.JComboBox;
+import javax.swing.JComponent;
+import javax.swing.JLabel;
+import javax.swing.JList;
+import javax.swing.JPanel;
+import javax.swing.JRadioButton;
+import javax.swing.JScrollPane;
+import javax.swing.JSpinner;
+import javax.swing.JTabbedPane;
+import javax.swing.SpinnerNumberModel;
 
 /**
  * @author Daniel Dyer
@@ -270,7 +294,7 @@ public class ControlPanel extends JPanel
             public void actionPerformed(ActionEvent ev)
             {
                 final int noOfGenerations = generationsSpinnerModel.getNumber().intValue();
-                final ProgressDialog progressDialog = new ProgressDialog((Frame) null, noOfGenerations); // TO DO: Proper owner.
+                final ProgressDialog progressDialog = new ProgressDialog(null, noOfGenerations); // TO DO: Proper owner.
                 new Thread(new Runnable()
                 {
                     public void run()

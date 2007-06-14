@@ -2,10 +2,16 @@
 package au.edu.uwa.csse.dyerd01.ipd.framework.evolution;
 
 import au.edu.uwa.csse.dyerd01.ipd.framework.RandomNumberGenerator;
-import java.io.*;
+import java.io.BufferedReader;
+import java.io.File;
+import java.io.FileReader;
+import java.io.FileWriter;
+import java.io.IOException;
+import java.io.PrintWriter;
 import java.util.ArrayList;
 import java.util.Date;
 import java.util.StringTokenizer;
+import java.util.List;
 import org.apache.log4j.Logger;
 
 /**
@@ -136,7 +142,7 @@ public class EvolutionResult
     
     public int[] getClassifications()
     {
-        return (int[]) classifications.clone();
+        return classifications.clone();
     }
     
     
@@ -176,10 +182,10 @@ public class EvolutionResult
         buffer.append(fixedPlayerRank);
         buffer.append(" Fitness: ");
         buffer.append(fitness);
-        for (int i = 0; i < classifications.length; i++)
+        for (int classification : classifications)
         {
             buffer.append(' ');
-            buffer.append(classifications[i]);
+            buffer.append(classification);
         }
         if (coEvo)
         {
@@ -210,10 +216,10 @@ public class EvolutionResult
         buffer.append(fixedPlayerRank);
         buffer.append('\t');
         buffer.append(fitness);
-        for (int i = 0; i < classifications.length; i++)
+        for (int classification : classifications)
         {
             buffer.append('\t');
-            buffer.append(classifications[i]);
+            buffer.append(classification);
         }
         if (coEvo)
         {
@@ -236,7 +242,7 @@ public class EvolutionResult
         {
             logger.debug("Loading results from file " + file.toString());
             BufferedReader reader = new BufferedReader(new FileReader(file));
-            ArrayList results = new ArrayList();
+            List<EvolutionResult> results = new ArrayList<EvolutionResult>();
             String line = reader.readLine();
             boolean coEvo = line.trim().equals("#!COEVO");
             while (line != null)
@@ -291,7 +297,7 @@ public class EvolutionResult
                 line = reader.readLine();
             }
             logger.debug("Finished loading " + results.size() + " records.");
-            return (EvolutionResult[]) results.toArray(new EvolutionResult[results.size()]);
+            return results.toArray(new EvolutionResult[results.size()]);
         }
         catch (IOException ex)
         {

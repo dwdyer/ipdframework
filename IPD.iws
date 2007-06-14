@@ -16,7 +16,68 @@
     <option name="USER" value="" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" name="Default" comment="" />
+    <list default="true" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/java/au/edu/uwa/csse/dyerd01/ipd/strategies/ApproximatingOpponentModeller.java" afterPath="$PROJECT_DIR$/src/java/au/edu/uwa/csse/dyerd01/ipd/strategies/ApproximatingOpponentModeller.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/java/au/edu/uwa/csse/dyerd01/ipd/strategies/Strategy27.java" afterPath="$PROJECT_DIR$/src/java/au/edu/uwa/csse/dyerd01/ipd/strategies/Strategy27.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/java/au/edu/uwa/csse/dyerd01/ipd/gui/EvolutionResultsPanel.java" afterPath="$PROJECT_DIR$/src/java/au/edu/uwa/csse/dyerd01/ipd/gui/EvolutionResultsPanel.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/java/au/edu/uwa/csse/dyerd01/ipd/gui/ProgressDialog.java" afterPath="$PROJECT_DIR$/src/java/au/edu/uwa/csse/dyerd01/ipd/gui/ProgressDialog.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/java/au/edu/uwa/csse/dyerd01/ipd/framework/GameHistory.java" afterPath="$PROJECT_DIR$/src/java/au/edu/uwa/csse/dyerd01/ipd/framework/GameHistory.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/java/au/edu/uwa/csse/dyerd01/ipd/gui/IPDGUI.java" afterPath="$PROJECT_DIR$/src/java/au/edu/uwa/csse/dyerd01/ipd/gui/IPDGUI.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/java/au/edu/uwa/csse/dyerd01/ipd/strategies/PunitiveOpponentModel.java" afterPath="$PROJECT_DIR$/src/java/au/edu/uwa/csse/dyerd01/ipd/strategies/PunitiveOpponentModel.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/java/au/edu/uwa/csse/dyerd01/ipd/unittests/HeadToHeadResultTest.java" afterPath="$PROJECT_DIR$/src/java/au/edu/uwa/csse/dyerd01/ipd/unittests/HeadToHeadResultTest.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/java/au/edu/uwa/csse/dyerd01/ipd/util/DataAnalyser.java" afterPath="$PROJECT_DIR$/src/java/au/edu/uwa/csse/dyerd01/ipd/util/DataAnalyser.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/java/au/edu/uwa/csse/dyerd01/ipd/gui/TournamentResultsTableModel.java" afterPath="$PROJECT_DIR$/src/java/au/edu/uwa/csse/dyerd01/ipd/gui/TournamentResultsTableModel.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/java/au/edu/uwa/csse/dyerd01/ipd/strategies/AbstractPeriodicPlayer.java" afterPath="$PROJECT_DIR$/src/java/au/edu/uwa/csse/dyerd01/ipd/strategies/AbstractPeriodicPlayer.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build.xml" afterPath="$PROJECT_DIR$/build.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/java/au/edu/uwa/csse/dyerd01/ipd/framework/RoundRobinResult.java" afterPath="$PROJECT_DIR$/src/java/au/edu/uwa/csse/dyerd01/ipd/framework/RoundRobinResult.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/java/au/edu/uwa/csse/dyerd01/ipd/strategies/AlwaysDefect.java" afterPath="$PROJECT_DIR$/src/java/au/edu/uwa/csse/dyerd01/ipd/strategies/AlwaysDefect.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/java/au/edu/uwa/csse/dyerd01/ipd/unittests/GameHistoryTest.java" afterPath="$PROJECT_DIR$/src/java/au/edu/uwa/csse/dyerd01/ipd/unittests/GameHistoryTest.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/java/au/edu/uwa/csse/dyerd01/ipd/unittests/HeadToHeadTest.java" afterPath="$PROJECT_DIR$/src/java/au/edu/uwa/csse/dyerd01/ipd/unittests/HeadToHeadTest.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/java/au/edu/uwa/csse/dyerd01/ipd/framework/TournamentManager.java" afterPath="$PROJECT_DIR$/src/java/au/edu/uwa/csse/dyerd01/ipd/framework/TournamentManager.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/java/au/edu/uwa/csse/dyerd01/ipd/gui/CoEvolutionChartPanel.java" afterPath="$PROJECT_DIR$/src/java/au/edu/uwa/csse/dyerd01/ipd/gui/CoEvolutionChartPanel.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/java/au/edu/uwa/csse/dyerd01/ipd/strategies/DeferredTitForTat.java" afterPath="$PROJECT_DIR$/src/java/au/edu/uwa/csse/dyerd01/ipd/strategies/DeferredTitForTat.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/java/au/edu/uwa/csse/dyerd01/ipd/strategies/PeriodicDDC.java" afterPath="$PROJECT_DIR$/src/java/au/edu/uwa/csse/dyerd01/ipd/strategies/PeriodicDDC.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/java/au/edu/uwa/csse/dyerd01/util/ANSIConsoleAppender.java" afterPath="$PROJECT_DIR$/src/java/au/edu/uwa/csse/dyerd01/util/ANSIConsoleAppender.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/java/au/edu/uwa/csse/dyerd01/ipd/gui/TournamentPanel.java" afterPath="$PROJECT_DIR$/src/java/au/edu/uwa/csse/dyerd01/ipd/gui/TournamentPanel.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/java/au/edu/uwa/csse/dyerd01/ipd/strategies/AlwaysCooperate.java" afterPath="$PROJECT_DIR$/src/java/au/edu/uwa/csse/dyerd01/ipd/strategies/AlwaysCooperate.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/java/au/edu/uwa/csse/dyerd01/ipd/unittests/TournamentManagerTest.java" afterPath="$PROJECT_DIR$/src/java/au/edu/uwa/csse/dyerd01/ipd/unittests/TournamentManagerTest.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/java/au/edu/uwa/csse/dyerd01/ipd/gui/ControlPanel.java" afterPath="$PROJECT_DIR$/src/java/au/edu/uwa/csse/dyerd01/ipd/gui/ControlPanel.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/java/au/edu/uwa/csse/dyerd01/ipd/strategies/LookUpTableOpponentModel.java" afterPath="$PROJECT_DIR$/src/java/au/edu/uwa/csse/dyerd01/ipd/strategies/LookUpTableOpponentModel.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/java/au/edu/uwa/csse/dyerd01/ipd/gui/TournamentResultsPanel.java" afterPath="$PROJECT_DIR$/src/java/au/edu/uwa/csse/dyerd01/ipd/gui/TournamentResultsPanel.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/java/au/edu/uwa/csse/dyerd01/ipd/strategies/HKOpponentModeller.java" afterPath="$PROJECT_DIR$/src/java/au/edu/uwa/csse/dyerd01/ipd/strategies/HKOpponentModeller.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/java/au/edu/uwa/csse/dyerd01/ipd/gui/ResultsPanel.java" afterPath="$PROJECT_DIR$/src/java/au/edu/uwa/csse/dyerd01/ipd/gui/ResultsPanel.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/java/au/edu/uwa/csse/dyerd01/ipd/strategies/Random.java" afterPath="$PROJECT_DIR$/src/java/au/edu/uwa/csse/dyerd01/ipd/strategies/Random.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/java/au/edu/uwa/csse/dyerd01/ipd/unittests/RoundRobinResultTest.java" afterPath="$PROJECT_DIR$/src/java/au/edu/uwa/csse/dyerd01/ipd/unittests/RoundRobinResultTest.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/java/au/edu/uwa/csse/dyerd01/ipd/strategies/SimpleOpponentModel.java" afterPath="$PROJECT_DIR$/src/java/au/edu/uwa/csse/dyerd01/ipd/strategies/SimpleOpponentModel.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/java/au/edu/uwa/csse/dyerd01/ipd/framework/evolution/Evolver.java" afterPath="$PROJECT_DIR$/src/java/au/edu/uwa/csse/dyerd01/ipd/framework/evolution/Evolver.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/java/au/edu/uwa/csse/dyerd01/ipd/unittests/GradualTest.java" afterPath="$PROJECT_DIR$/src/java/au/edu/uwa/csse/dyerd01/ipd/unittests/GradualTest.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/java/au/edu/uwa/csse/dyerd01/ipd/framework/evolution/EvolutionListener.java" afterPath="$PROJECT_DIR$/src/java/au/edu/uwa/csse/dyerd01/ipd/framework/evolution/EvolutionListener.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/java/au/edu/uwa/csse/dyerd01/ipd/gui/EvolutionAveragesChartPanel.java" afterPath="$PROJECT_DIR$/src/java/au/edu/uwa/csse/dyerd01/ipd/gui/EvolutionAveragesChartPanel.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/java/au/edu/uwa/csse/dyerd01/ipd/gui/FixedPlayerAdvantageChartPanel.java" afterPath="$PROJECT_DIR$/src/java/au/edu/uwa/csse/dyerd01/ipd/gui/FixedPlayerAdvantageChartPanel.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/java/au/edu/uwa/csse/dyerd01/ipd/framework/evolution/EvolutionResult.java" afterPath="$PROJECT_DIR$/src/java/au/edu/uwa/csse/dyerd01/ipd/framework/evolution/EvolutionResult.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/java/au/edu/uwa/csse/dyerd01/ipd/strategies/PunitiveOpponentModeller.java" afterPath="$PROJECT_DIR$/src/java/au/edu/uwa/csse/dyerd01/ipd/strategies/PunitiveOpponentModeller.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/java/au/edu/uwa/csse/dyerd01/ipd/strategies/ModellerNemesis.java" afterPath="$PROJECT_DIR$/src/java/au/edu/uwa/csse/dyerd01/ipd/strategies/ModellerNemesis.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/java/au/edu/uwa/csse/dyerd01/ipd/gui/MainPanel.java" afterPath="$PROJECT_DIR$/src/java/au/edu/uwa/csse/dyerd01/ipd/gui/MainPanel.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/java/au/edu/uwa/csse/dyerd01/ipd/strategies/HarshGradual.java" afterPath="$PROJECT_DIR$/src/java/au/edu/uwa/csse/dyerd01/ipd/strategies/HarshGradual.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/java/au/edu/uwa/csse/dyerd01/ipd/strategies/Pavlov.java" afterPath="$PROJECT_DIR$/src/java/au/edu/uwa/csse/dyerd01/ipd/strategies/Pavlov.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/java/au/edu/uwa/csse/dyerd01/ipd/strategies/SuspiciousTitForTat.java" afterPath="$PROJECT_DIR$/src/java/au/edu/uwa/csse/dyerd01/ipd/strategies/SuspiciousTitForTat.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/java/au/edu/uwa/csse/dyerd01/ipd/strategies/Gradual.java" afterPath="$PROJECT_DIR$/src/java/au/edu/uwa/csse/dyerd01/ipd/strategies/Gradual.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/java/au/edu/uwa/csse/dyerd01/ipd/strategies/Grim.java" afterPath="$PROJECT_DIR$/src/java/au/edu/uwa/csse/dyerd01/ipd/strategies/Grim.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/java/au/edu/uwa/csse/dyerd01/ipd/strategies/PeriodicCCD.java" afterPath="$PROJECT_DIR$/src/java/au/edu/uwa/csse/dyerd01/ipd/strategies/PeriodicCCD.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/java/au/edu/uwa/csse/dyerd01/ipd/strategies/SimpleOpponentModeller.java" afterPath="$PROJECT_DIR$/src/java/au/edu/uwa/csse/dyerd01/ipd/strategies/SimpleOpponentModeller.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/java/au/edu/uwa/csse/dyerd01/ipd/gui/TournamentResultsTableRenderer.java" afterPath="$PROJECT_DIR$/src/java/au/edu/uwa/csse/dyerd01/ipd/gui/TournamentResultsTableRenderer.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/java/au/edu/uwa/csse/dyerd01/ipd/gui/PopulationCompositionChartPanel.java" afterPath="$PROJECT_DIR$/src/java/au/edu/uwa/csse/dyerd01/ipd/gui/PopulationCompositionChartPanel.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/java/au/edu/uwa/csse/dyerd01/ipd/strategies/Prober.java" afterPath="$PROJECT_DIR$/src/java/au/edu/uwa/csse/dyerd01/ipd/strategies/Prober.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/java/au/edu/uwa/csse/dyerd01/ipd/unittests/SimpleOpponentModelTest.java" afterPath="$PROJECT_DIR$/src/java/au/edu/uwa/csse/dyerd01/ipd/unittests/SimpleOpponentModelTest.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/java/au/edu/uwa/csse/dyerd01/ipd/strategies/Majority.java" afterPath="$PROJECT_DIR$/src/java/au/edu/uwa/csse/dyerd01/ipd/strategies/Majority.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/java/au/edu/uwa/csse/dyerd01/ipd/strategies/TitForTat.java" afterPath="$PROJECT_DIR$/src/java/au/edu/uwa/csse/dyerd01/ipd/strategies/TitForTat.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/java/au/edu/uwa/csse/dyerd01/ipd/strategies/Strategy18.java" afterPath="$PROJECT_DIR$/src/java/au/edu/uwa/csse/dyerd01/ipd/strategies/Strategy18.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/java/au/edu/uwa/csse/dyerd01/ipd/gui/FixedPlayerRankChartPanel.java" afterPath="$PROJECT_DIR$/src/java/au/edu/uwa/csse/dyerd01/ipd/gui/FixedPlayerRankChartPanel.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/java/au/edu/uwa/csse/dyerd01/ipd/framework/evolution/EvolvedPlayer.java" afterPath="$PROJECT_DIR$/src/java/au/edu/uwa/csse/dyerd01/ipd/framework/evolution/EvolvedPlayer.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/IPD.iws" afterPath="$PROJECT_DIR$/IPD.iws" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/java/au/edu/uwa/csse/dyerd01/ipd/strategies/Strategy30.java" afterPath="$PROJECT_DIR$/src/java/au/edu/uwa/csse/dyerd01/ipd/strategies/Strategy30.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/java/au/edu/uwa/csse/dyerd01/ipd/strategies/TitFor2Tats.java" afterPath="$PROJECT_DIR$/src/java/au/edu/uwa/csse/dyerd01/ipd/strategies/TitFor2Tats.java" />
+    </list>
   </component>
   <component name="ChangesViewManager" flattened_view="true" />
   <component name="CheckinPanelState" />
@@ -139,67 +200,19 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="Action.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/java/au/edu/uwa/csse/dyerd01/ipd/framework/Action.java">
+      <file leaf-file-name="RoundRobinResult.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/java/au/edu/uwa/csse/dyerd01/ipd/framework/RoundRobinResult.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="7" column="19" selection-start="218" selection-end="218" vertical-scroll-proportion="0.109947644">
+            <state line="52" column="55" selection-start="1382" selection-end="1382" vertical-scroll-proportion="1.1652893">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="build.xml" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/build.xml">
-          <provider editor-type-id="antVisTarget">
-            <state />
-          </provider>
+      <file leaf-file-name="ProgressDialog.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/java/au/edu/uwa/csse/dyerd01/ipd/gui/ProgressDialog.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="FixedPlayerAdvantageChartPanel.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/java/au/edu/uwa/csse/dyerd01/ipd/gui/FixedPlayerAdvantageChartPanel.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="12" column="13" selection-start="358" selection-end="358" vertical-scroll-proportion="0.07853403">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="FixedPlayerRankChartPanel.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/java/au/edu/uwa/csse/dyerd01/ipd/gui/FixedPlayerRankChartPanel.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="12" column="13" selection-start="358" selection-end="358" vertical-scroll-proportion="0.07853403">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="IPDGUI.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/java/au/edu/uwa/csse/dyerd01/ipd/gui/IPDGUI.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="15" column="13" selection-start="454" selection-end="454" vertical-scroll-proportion="0.14136125">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="SimpleOpponentModel.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/java/au/edu/uwa/csse/dyerd01/ipd/strategies/SimpleOpponentModel.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="8" column="13" selection-start="156" selection-end="156" vertical-scroll-proportion="0.12565444">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ApproximatingOpponentModeller.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/java/au/edu/uwa/csse/dyerd01/ipd/strategies/ApproximatingOpponentModeller.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="9" column="13" selection-start="241" selection-end="241" vertical-scroll-proportion="0.14136125">
+            <state line="15" column="11" selection-start="403" selection-end="403" vertical-scroll-proportion="0.26452905">
               <folding />
             </state>
           </provider>
@@ -208,25 +221,72 @@
       <file leaf-file-name="LookUpTableOpponentModel.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/java/au/edu/uwa/csse/dyerd01/ipd/strategies/LookUpTableOpponentModel.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="9" column="13" selection-start="188" selection-end="188" vertical-scroll-proportion="-2.937173">
+            <state line="166" column="17" selection-start="7811" selection-end="7811" vertical-scroll-proportion="-0.9752066">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Majority.java" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/java/au/edu/uwa/csse/dyerd01/ipd/strategies/Majority.java">
+      <file leaf-file-name="ANSIConsoleAppender.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/java/au/edu/uwa/csse/dyerd01/util/ANSIConsoleAppender.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="8" column="13" selection-start="156" selection-end="156" vertical-scroll-proportion="0.12565444">
+            <state line="60" column="20" selection-start="2309" selection-end="2309" vertical-scroll-proportion="0.36072144">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="PunitiveOpponentModel.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/java/au/edu/uwa/csse/dyerd01/ipd/strategies/PunitiveOpponentModel.java">
+      <file leaf-file-name="DataAnalyser.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/java/au/edu/uwa/csse/dyerd01/ipd/util/DataAnalyser.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="9" column="13" selection-start="188" selection-end="188" vertical-scroll-proportion="-0.7225131">
+            <state line="68" column="35" selection-start="2712" selection-end="2712" vertical-scroll-proportion="0.21900827">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="RoundRobinResultTest.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/java/au/edu/uwa/csse/dyerd01/ipd/unittests/RoundRobinResultTest.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="82" column="0" selection-start="3328" selection-end="3328" vertical-scroll-proportion="0.8347107">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Evolver.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/java/au/edu/uwa/csse/dyerd01/ipd/framework/evolution/Evolver.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="126" column="23" selection-start="4886" selection-end="4886" vertical-scroll-proportion="-0.822314">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="HeadToHead.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/java/au/edu/uwa/csse/dyerd01/ipd/framework/HeadToHead.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="67" column="12" selection-start="2164" selection-end="2164" vertical-scroll-proportion="1.1818181">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="GameHistory.java" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/java/au/edu/uwa/csse/dyerd01/ipd/framework/GameHistory.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="15" column="12" selection-start="370" selection-end="370" vertical-scroll-proportion="0.29338843">
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="TournamentResultsTableModel.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/java/au/edu/uwa/csse/dyerd01/ipd/gui/TournamentResultsTableModel.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="26" column="37" selection-start="1318" selection-end="1318" vertical-scroll-proportion="0.29338843">
               <folding />
             </state>
           </provider>
@@ -314,6 +374,140 @@
           <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
         </PATH_ELEMENT>
       </PATH>
+      <PATH>
+        <PATH_ELEMENT>
+          <option name="myItemId" value="IPD.ipr" />
+          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+        </PATH_ELEMENT>
+        <PATH_ELEMENT>
+          <option name="myItemId" value="IPD" />
+          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewModuleNode" />
+        </PATH_ELEMENT>
+        <PATH_ELEMENT>
+          <option name="myItemId" value="PsiDirectory:$PROJECT_DIR$" />
+          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+        </PATH_ELEMENT>
+        <PATH_ELEMENT>
+          <option name="myItemId" value="PsiDirectory:$PROJECT_DIR$/src" />
+          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+        </PATH_ELEMENT>
+        <PATH_ELEMENT>
+          <option name="myItemId" value="PsiDirectory:$PROJECT_DIR$/src/java" />
+          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+        </PATH_ELEMENT>
+      </PATH>
+      <PATH>
+        <PATH_ELEMENT>
+          <option name="myItemId" value="IPD.ipr" />
+          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+        </PATH_ELEMENT>
+        <PATH_ELEMENT>
+          <option name="myItemId" value="IPD" />
+          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewModuleNode" />
+        </PATH_ELEMENT>
+        <PATH_ELEMENT>
+          <option name="myItemId" value="PsiDirectory:$PROJECT_DIR$" />
+          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+        </PATH_ELEMENT>
+        <PATH_ELEMENT>
+          <option name="myItemId" value="PsiDirectory:$PROJECT_DIR$/src" />
+          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+        </PATH_ELEMENT>
+        <PATH_ELEMENT>
+          <option name="myItemId" value="PsiDirectory:$PROJECT_DIR$/src/java" />
+          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+        </PATH_ELEMENT>
+        <PATH_ELEMENT>
+          <option name="myItemId" value="PsiDirectory:$PROJECT_DIR$/src/java/au/edu/uwa/csse/dyerd01" />
+          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+        </PATH_ELEMENT>
+        <PATH_ELEMENT>
+          <option name="myItemId" value="PsiDirectory:$PROJECT_DIR$/src/java/au/edu/uwa/csse/dyerd01/util" />
+          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+        </PATH_ELEMENT>
+      </PATH>
+      <PATH>
+        <PATH_ELEMENT>
+          <option name="myItemId" value="IPD.ipr" />
+          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+        </PATH_ELEMENT>
+        <PATH_ELEMENT>
+          <option name="myItemId" value="IPD" />
+          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewModuleNode" />
+        </PATH_ELEMENT>
+        <PATH_ELEMENT>
+          <option name="myItemId" value="PsiDirectory:$PROJECT_DIR$" />
+          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+        </PATH_ELEMENT>
+        <PATH_ELEMENT>
+          <option name="myItemId" value="PsiDirectory:$PROJECT_DIR$/src" />
+          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+        </PATH_ELEMENT>
+        <PATH_ELEMENT>
+          <option name="myItemId" value="PsiDirectory:$PROJECT_DIR$/src/java" />
+          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+        </PATH_ELEMENT>
+        <PATH_ELEMENT>
+          <option name="myItemId" value="PsiDirectory:$PROJECT_DIR$/src/java/au/edu/uwa/csse/dyerd01" />
+          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+        </PATH_ELEMENT>
+        <PATH_ELEMENT>
+          <option name="myItemId" value="PsiDirectory:$PROJECT_DIR$/src/java/au/edu/uwa/csse/dyerd01/ipd" />
+          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+        </PATH_ELEMENT>
+      </PATH>
+      <PATH>
+        <PATH_ELEMENT>
+          <option name="myItemId" value="IPD.ipr" />
+          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+        </PATH_ELEMENT>
+        <PATH_ELEMENT>
+          <option name="myItemId" value="IPD" />
+          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewModuleNode" />
+        </PATH_ELEMENT>
+        <PATH_ELEMENT>
+          <option name="myItemId" value="PsiDirectory:$PROJECT_DIR$" />
+          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+        </PATH_ELEMENT>
+        <PATH_ELEMENT>
+          <option name="myItemId" value="PsiDirectory:$PROJECT_DIR$/src" />
+          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+        </PATH_ELEMENT>
+        <PATH_ELEMENT>
+          <option name="myItemId" value="PsiDirectory:$PROJECT_DIR$/src/java" />
+          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+        </PATH_ELEMENT>
+        <PATH_ELEMENT>
+          <option name="myItemId" value="PsiDirectory:$PROJECT_DIR$/src/java/au/edu/uwa/csse/dyerd01" />
+          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+        </PATH_ELEMENT>
+        <PATH_ELEMENT>
+          <option name="myItemId" value="PsiDirectory:$PROJECT_DIR$/src/java/au/edu/uwa/csse/dyerd01/ipd" />
+          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+        </PATH_ELEMENT>
+        <PATH_ELEMENT>
+          <option name="myItemId" value="PsiDirectory:$PROJECT_DIR$/src/java/au/edu/uwa/csse/dyerd01/ipd/framework" />
+          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+        </PATH_ELEMENT>
+      </PATH>
+      <PATH>
+        <PATH_ELEMENT>
+          <option name="myItemId" value="IPD.ipr" />
+          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+        </PATH_ELEMENT>
+        <PATH_ELEMENT>
+          <option name="myItemId" value="IPD" />
+          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewModuleNode" />
+        </PATH_ELEMENT>
+        <PATH_ELEMENT>
+          <option name="myItemId" value="PsiDirectory:$PROJECT_DIR$" />
+          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+        </PATH_ELEMENT>
+        <PATH_ELEMENT>
+          <option name="myItemId" value="PsiDirectory:$PROJECT_DIR$/src" />
+          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+        </PATH_ELEMENT>
+      </PATH>
     </subPane>
   </component>
   <component name="ProjectReloadState">
@@ -327,7 +521,7 @@
       <showLibraryContents />
       <hideEmptyPackages />
       <abbreviatePackageNames />
-      <showStructure PackagesPane="false" ProjectPane="false" Scope="false" Favorites="false" />
+      <showStructure Favorites="false" PackagesPane="false" Scope="false" ProjectPane="false" />
       <autoscrollToSource />
       <autoscrollFromSource />
       <sortByType />
@@ -463,33 +657,33 @@
     <frame x="1" y="22" width="1280" height="927" extended-state="0" />
     <editor active="false" />
     <layout>
-      <window_info id="SQL" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" order="-1" />
-      <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" order="-1" />
-      <window_info id="IDEtalk" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" order="-1" />
+      <window_info id="SQL" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" order="8" />
+      <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" order="3" />
+      <window_info id="IDEtalk" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" order="3" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" order="7" />
-      <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" order="-1" />
-      <window_info id="Ant Build" active="true" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24939074" order="1" />
+      <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" order="3" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.13241267" order="1" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" order="4" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" order="-1" />
-      <window_info id="CVS" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" order="-1" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" order="8" />
+      <window_info id="CVS" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" order="8" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24939074" order="0" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" order="1" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3293124" order="1" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" order="1" />
-      <window_info id="Dependency Cycles" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" order="-1" />
-      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" order="6" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3293124" order="-1" />
-      <window_info id="Dependency Viewer" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" order="-1" />
-      <window_info id="Module Dependencies" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" order="-1" />
-      <window_info id="Metrics" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" order="-1" />
-      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" order="-1" />
+      <window_info id="Dependency Cycles" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" order="8" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.39927623" order="6" />
+      <window_info id="Messages" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3293124" order="8" />
+      <window_info id="Dependency Viewer" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" order="8" />
+      <window_info id="Module Dependencies" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" order="3" />
+      <window_info id="Metrics" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" order="8" />
+      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" order="8" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" order="2" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" order="2" />
-      <window_info id="File View" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" order="-1" />
+      <window_info id="File View" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" order="3" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" order="0" />
-      <window_info id="JarSpy" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3293124" order="-1" />
-      <window_info id="IDEtalk Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" order="-1" />
-      <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" order="2" />
+      <window_info id="JarSpy" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3293124" order="8" />
+      <window_info id="IDEtalk Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" order="8" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" order="0" />
+      <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" order="2" />
       <window_info id="EJB" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" order="3" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" order="5" />
     </layout>
@@ -545,111 +739,110 @@
     <option name="myLastEditedConfigurable" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/java/au/edu/uwa/csse/dyerd01/ipd/framework/Player.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="7" column="17" selection-start="189" selection-end="189" vertical-scroll-proportion="0.107830554">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/java/MANIFEST.MF">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/java/au/edu/uwa/csse/dyerd01/ipd/framework/evolution/EvolvedPlayer.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="8" column="13" selection-start="165" selection-end="165" vertical-scroll-proportion="-2.9267015">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/java/au/edu/uwa/csse/dyerd01/ipd/framework/RoundRobinResult.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="11" column="13" selection-start="220" selection-end="220" vertical-scroll-proportion="0.12323492">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/java/au/edu/uwa/csse/dyerd01/ipd/framework/TournamentManager.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="15" column="13" selection-start="421" selection-end="421" vertical-scroll-proportion="0.15404364">
+        <state line="111" column="12" selection-start="5464" selection-end="5464" vertical-scroll-proportion="0.33333334">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/java/au/edu/uwa/csse/dyerd01/ipd/framework/Action.java">
+    <entry file="file://$PROJECT_DIR$/src/java/au/edu/uwa/csse/dyerd01/ipd/gui/TournamentResultsTableRenderer.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="7" column="19" selection-start="218" selection-end="218" vertical-scroll-proportion="0.109947644">
+        <state line="44" column="35" selection-start="2089" selection-end="2089" vertical-scroll-proportion="0.57746476">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/build.xml">
-      <provider editor-type-id="antVisTarget">
-        <state />
-      </provider>
+    <entry file="file://$PROJECT_DIR$/src/java/au/edu/uwa/csse/dyerd01/ipd/gui/TournamentResultsPanel.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+        <state line="22" column="92" selection-start="862" selection-end="862" vertical-scroll-proportion="0.33333334">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/java/au/edu/uwa/csse/dyerd01/ipd/gui/FixedPlayerAdvantageChartPanel.java">
+    <entry file="file://$PROJECT_DIR$/src/java/au/edu/uwa/csse/dyerd01/ipd/gui/ControlPanel.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="12" column="13" selection-start="358" selection-end="358" vertical-scroll-proportion="0.07853403">
+        <state line="296" column="65" selection-start="14368" selection-end="14368" vertical-scroll-proportion="0.33333334">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/java/au/edu/uwa/csse/dyerd01/ipd/gui/FixedPlayerRankChartPanel.java">
+    <entry file="file://$PROJECT_DIR$/src/java/au/edu/uwa/csse/dyerd01/ipd/gui/ProgressDialog.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="12" column="13" selection-start="358" selection-end="358" vertical-scroll-proportion="0.07853403">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/java/au/edu/uwa/csse/dyerd01/ipd/gui/IPDGUI.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="15" column="13" selection-start="454" selection-end="454" vertical-scroll-proportion="0.14136125">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/java/au/edu/uwa/csse/dyerd01/ipd/strategies/PunitiveOpponentModel.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="9" column="13" selection-start="188" selection-end="188" vertical-scroll-proportion="-0.7225131">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/java/au/edu/uwa/csse/dyerd01/ipd/strategies/SimpleOpponentModel.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="8" column="13" selection-start="156" selection-end="156" vertical-scroll-proportion="0.12565444">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/java/au/edu/uwa/csse/dyerd01/ipd/strategies/ApproximatingOpponentModeller.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="9" column="13" selection-start="241" selection-end="241" vertical-scroll-proportion="0.14136125">
+        <state line="15" column="11" selection-start="403" selection-end="403" vertical-scroll-proportion="0.26452905">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/java/au/edu/uwa/csse/dyerd01/ipd/strategies/LookUpTableOpponentModel.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="9" column="13" selection-start="188" selection-end="188" vertical-scroll-proportion="-2.937173">
+        <state line="166" column="17" selection-start="7811" selection-end="7811" vertical-scroll-proportion="-0.9752066">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/java/au/edu/uwa/csse/dyerd01/ipd/strategies/Majority.java">
+    <entry file="file://$PROJECT_DIR$/src/java/au/edu/uwa/csse/dyerd01/util/ANSIConsoleAppender.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="8" column="13" selection-start="156" selection-end="156" vertical-scroll-proportion="0.12565444">
+        <state line="60" column="20" selection-start="2309" selection-end="2309" vertical-scroll-proportion="0.36072144">
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/java/au/edu/uwa/csse/dyerd01/ipd/framework/RoundRobinResult.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="52" column="55" selection-start="1382" selection-end="1382" vertical-scroll-proportion="1.1652893">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/java/au/edu/uwa/csse/dyerd01/ipd/util/DataAnalyser.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="68" column="35" selection-start="2712" selection-end="2712" vertical-scroll-proportion="0.21900827">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/lib/anguish.jar!/net/sourceforge/anguish/sortabletable/RowComparator.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="11" column="11" selection-start="500" selection-end="500" vertical-scroll-proportion="0.28169015">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/java/au/edu/uwa/csse/dyerd01/ipd/gui/TournamentResultsTableModel.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="26" column="37" selection-start="1318" selection-end="1318" vertical-scroll-proportion="0.29338843">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/java/au/edu/uwa/csse/dyerd01/ipd/unittests/RoundRobinResultTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="82" column="0" selection-start="3328" selection-end="3328" vertical-scroll-proportion="0.8347107">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/java/au/edu/uwa/csse/dyerd01/ipd/framework/evolution/Evolver.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="126" column="23" selection-start="4886" selection-end="4886" vertical-scroll-proportion="-0.822314">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/java/au/edu/uwa/csse/dyerd01/ipd/framework/HeadToHead.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="67" column="12" selection-start="2164" selection-end="2164" vertical-scroll-proportion="1.1818181">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/java/au/edu/uwa/csse/dyerd01/ipd/framework/GameHistory.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="15" column="12" selection-start="370" selection-end="370" vertical-scroll-proportion="0.29338843">
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

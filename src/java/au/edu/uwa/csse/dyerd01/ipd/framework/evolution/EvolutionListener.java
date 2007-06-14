@@ -1,7 +1,6 @@
 // $Header: $
 package au.edu.uwa.csse.dyerd01.ipd.framework.evolution;
 
-import au.edu.uwa.csse.dyerd01.ipd.framework.RoundRobinResult;
 import java.util.EventListener;
 
 /**

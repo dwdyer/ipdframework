@@ -3,8 +3,8 @@ package au.edu.uwa.csse.dyerd01.ipd.gui;
 
 import au.edu.uwa.csse.dyerd01.ipd.framework.RoundRobinResult;
 import au.edu.uwa.csse.dyerd01.ipd.framework.evolution.EvolutionResult;
-import java.awt.*;
-import javax.swing.*;
+import java.awt.CardLayout;
+import javax.swing.JPanel;
 
 /**
  * @author Daniel Dyer

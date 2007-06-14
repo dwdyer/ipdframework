@@ -3,8 +3,8 @@ package au.edu.uwa.csse.dyerd01.ipd.gui;
 
 import au.edu.uwa.csse.dyerd01.ipd.framework.RoundRobinResult;
 import au.edu.uwa.csse.dyerd01.ipd.framework.evolution.EvolutionResult;
-import java.awt.*;
-import javax.swing.*;
+import java.awt.BorderLayout;
+import javax.swing.JPanel;
 import org.apache.log4j.Logger;
 
 public class MainPanel extends JPanel implements ControlPanel.Externals

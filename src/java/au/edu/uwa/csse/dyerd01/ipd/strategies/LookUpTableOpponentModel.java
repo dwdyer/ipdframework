@@ -1,7 +1,13 @@
 // $Header: $
 package au.edu.uwa.csse.dyerd01.ipd.strategies;
 
-import au.edu.uwa.csse.dyerd01.ipd.framework.*;
+import au.edu.uwa.csse.dyerd01.ipd.framework.Action;
+import au.edu.uwa.csse.dyerd01.ipd.framework.GameHistory;
+import au.edu.uwa.csse.dyerd01.ipd.framework.OpponentModel;
+import au.edu.uwa.csse.dyerd01.ipd.framework.PayOff;
+import au.edu.uwa.csse.dyerd01.ipd.framework.Player;
+import au.edu.uwa.csse.dyerd01.ipd.framework.RandomNumberGenerator;
+import au.edu.uwa.csse.dyerd01.ipd.framework.TournamentManager;
 import org.apache.log4j.Logger;
 
 /**
@@ -155,10 +161,10 @@ public class LookUpTableOpponentModel implements OpponentModel
             return RANDOM.nextDouble() < 0.5 ? Action.COOPERATE : Action.DEFECT;
         }
         
-        int cc = (int) getLookUpIndex(model[1][1]);
-        int cd = (int) getLookUpIndex(model[1][2]);
-        int dc = (int) getLookUpIndex(model[2][1]);
-        int dd = (int) getLookUpIndex(model[2][2]);
+        int cc = getLookUpIndex(model[1][1]);
+        int cd = getLookUpIndex(model[1][2]);
+        int dc = getLookUpIndex(model[2][1]);
+        int dd = getLookUpIndex(model[2][2]);
         Action[] counterStrategy = LOOK_UP_TABLE[cc][cd][dc][dd];
         int iteration = history.getHistoryLength() - 1;
         if (history.getPlayerActionForIteration(player, iteration) == Action.COOPERATE)

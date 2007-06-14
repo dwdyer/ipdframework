@@ -1,9 +1,11 @@
 // $Header: $
 package au.edu.uwa.csse.dyerd01.ipd.unittests;
 
-import au.edu.uwa.csse.dyerd01.ipd.framework.*;
-import au.edu.uwa.csse.dyerd01.ipd.strategies.*;
-import java.util.Comparator;
+import au.edu.uwa.csse.dyerd01.ipd.framework.Action;
+import au.edu.uwa.csse.dyerd01.ipd.framework.GameHistory;
+import au.edu.uwa.csse.dyerd01.ipd.strategies.AlwaysCooperate;
+import au.edu.uwa.csse.dyerd01.ipd.strategies.AlwaysDefect;
+import au.edu.uwa.csse.dyerd01.ipd.strategies.Gradual;
 import junit.framework.TestCase;
 
 /**

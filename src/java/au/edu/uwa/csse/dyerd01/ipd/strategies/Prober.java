@@ -1,7 +1,8 @@
 // $Header: $
 package au.edu.uwa.csse.dyerd01.ipd.strategies;
 
-import au.edu.uwa.csse.dyerd01.ipd.framework.*;
+import au.edu.uwa.csse.dyerd01.ipd.framework.Action;
+import au.edu.uwa.csse.dyerd01.ipd.framework.GameHistory;
 
 /**
  * An implementation of PROBER, one of the strategies used by Beaufils, Delahaye and Mathieu

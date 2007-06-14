@@ -1,9 +1,32 @@
 // $Header: $
 package au.edu.uwa.csse.dyerd01.ipd.framework;
 
-import au.edu.uwa.csse.dyerd01.ipd.framework.evolution.*;
-import au.edu.uwa.csse.dyerd01.ipd.strategies.*;
-import java.util.ArrayList;
+import au.edu.uwa.csse.dyerd01.ipd.framework.evolution.EvolutionListener;
+import au.edu.uwa.csse.dyerd01.ipd.framework.evolution.EvolutionResult;
+import au.edu.uwa.csse.dyerd01.ipd.framework.evolution.EvolvedPlayer;
+import au.edu.uwa.csse.dyerd01.ipd.framework.evolution.Evolver;
+import au.edu.uwa.csse.dyerd01.ipd.strategies.AlwaysCooperate;
+import au.edu.uwa.csse.dyerd01.ipd.strategies.AlwaysDefect;
+import au.edu.uwa.csse.dyerd01.ipd.strategies.ApproximatingOpponentModeller;
+import au.edu.uwa.csse.dyerd01.ipd.strategies.DeferredTitForTat;
+import au.edu.uwa.csse.dyerd01.ipd.strategies.Gradual;
+import au.edu.uwa.csse.dyerd01.ipd.strategies.Grim;
+import au.edu.uwa.csse.dyerd01.ipd.strategies.HarshGradual;
+import au.edu.uwa.csse.dyerd01.ipd.strategies.Majority;
+import au.edu.uwa.csse.dyerd01.ipd.strategies.ModellerNemesis;
+import au.edu.uwa.csse.dyerd01.ipd.strategies.Pavlov;
+import au.edu.uwa.csse.dyerd01.ipd.strategies.PeriodicCCD;
+import au.edu.uwa.csse.dyerd01.ipd.strategies.PeriodicDDC;
+import au.edu.uwa.csse.dyerd01.ipd.strategies.Prober;
+import au.edu.uwa.csse.dyerd01.ipd.strategies.PunitiveOpponentModeller;
+import au.edu.uwa.csse.dyerd01.ipd.strategies.Random;
+import au.edu.uwa.csse.dyerd01.ipd.strategies.SimpleOpponentModeller;
+import au.edu.uwa.csse.dyerd01.ipd.strategies.Strategy18;
+import au.edu.uwa.csse.dyerd01.ipd.strategies.Strategy27;
+import au.edu.uwa.csse.dyerd01.ipd.strategies.Strategy30;
+import au.edu.uwa.csse.dyerd01.ipd.strategies.SuspiciousTitForTat;
+import au.edu.uwa.csse.dyerd01.ipd.strategies.TitFor2Tats;
+import au.edu.uwa.csse.dyerd01.ipd.strategies.TitForTat;
 import java.util.HashMap;
 import java.util.Map;
 import org.apache.log4j.Logger;
@@ -75,7 +98,7 @@ public class TournamentManager
                                                           boolean playSelf)
     {
         logger.debug("Starting round-robin tournament with " + players.length + " players...");
-        HashMap playerRecords = new HashMap();
+        Map<Player, RoundRobinResult> playerRecords = new HashMap<Player, RoundRobinResult>();
         for (int i = 0; i < players.length - 1; i++)
         {
             for (int j = i + 1; j < players.length; j++)
@@ -90,7 +113,7 @@ public class TournamentManager
             {
                 try
                 {
-                    Player player2 = (Player) players[i].getClass().newInstance();
+                    Player player2 = players[i].getClass().newInstance();
                     playHeadToHead(players[i], player2, noOfRounds, noiseProbability, playerRecords);
                     playerRecords.remove(player2); // Ugly hack, fix this.
                 }
@@ -103,7 +126,7 @@ public class TournamentManager
         }
 
         logger.debug("Tournament completed.");
-        return (RoundRobinResult[]) playerRecords.values().toArray(new RoundRobinResult[playerRecords.size()]);
+        return playerRecords.values().toArray(new RoundRobinResult[playerRecords.size()]);
     }
     
     
@@ -214,7 +237,7 @@ public class TournamentManager
                                 Player player2,
                                 int noOfRounds,
                                 double noiseProbability,
-                                Map playerRecords)
+                                Map<Player, RoundRobinResult> playerRecords)
     {
         HeadToHead game = new HeadToHead(player1, player2, noOfRounds, noiseProbability);
         game.run();
@@ -235,9 +258,10 @@ public class TournamentManager
     }
     
     
-    private RoundRobinResult getPlayerRecord(Map records, Player player)
+    private RoundRobinResult getPlayerRecord(Map<Player, RoundRobinResult> records,
+                                             Player player)
     {
-        RoundRobinResult record = (RoundRobinResult) records.get(player);
+        RoundRobinResult record = records.get(player);
         if (record == null)
         {
             record = new RoundRobinResult(player);

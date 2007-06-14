@@ -1,7 +1,8 @@
 // $Header: $
 package au.edu.uwa.csse.dyerd01.ipd.strategies;
 
-import au.edu.uwa.csse.dyerd01.ipd.framework.*;
+import au.edu.uwa.csse.dyerd01.ipd.framework.Action;
+import au.edu.uwa.csse.dyerd01.ipd.framework.GameHistory;
 import org.apache.log4j.Logger;
 
 /**
@@ -18,14 +19,6 @@ public class HarshGradual extends Gradual
         return "HarshGradual";
     }
     
-    
-    public void reset()
-    {
-        defectionCount = 0;
-        mode = MODE_NORMAL;
-        modeDuration = 0;
-    }
-
     
     public Action getNextMove(GameHistory history)
     {

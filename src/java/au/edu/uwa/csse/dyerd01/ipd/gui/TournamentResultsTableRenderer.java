@@ -2,9 +2,12 @@
 package au.edu.uwa.csse.dyerd01.ipd.gui;
 
 import au.edu.uwa.csse.dyerd01.ipd.framework.RoundRobinResult;
-import java.awt.*;
+import java.awt.Color;
+import java.awt.Component;
+import java.awt.Font;
 import java.text.DecimalFormat;
-import javax.swing.*;
+import javax.swing.JLabel;
+import javax.swing.JTable;
 import javax.swing.table.DefaultTableCellRenderer;
 import net.sourceforge.anguish.sortabletable.SortableTableModel;
 
@@ -39,7 +42,7 @@ public class TournamentResultsTableRenderer extends DefaultTableCellRenderer
         
         if (column == TournamentResultsTableModel.MARGIN_COLUMN)
         {
-            renderer.setForeground(((Integer) value).intValue() < 0 ? NEGATIVE_COLOR : POSITIVE_COLOR);
+            renderer.setForeground((Integer) value < 0 ? NEGATIVE_COLOR : POSITIVE_COLOR);
         }
         else
         {

@@ -1,7 +1,9 @@
 // $Header: $
 package au.edu.uwa.csse.dyerd01.ipd.unittests;
 
-import au.edu.uwa.csse.dyerd01.ipd.framework.*;
+import au.edu.uwa.csse.dyerd01.ipd.framework.HeadToHeadResult;
+import au.edu.uwa.csse.dyerd01.ipd.framework.Player;
+import au.edu.uwa.csse.dyerd01.ipd.framework.RoundRobinResult;
 import au.edu.uwa.csse.dyerd01.ipd.strategies.AlwaysCooperate;
 import java.util.Comparator;
 import junit.framework.TestCase;
@@ -78,12 +80,10 @@ public class RoundRobinResultTest extends TestCase
         Player player = new AlwaysCooperate();
         RoundRobinResult result = new RoundRobinResult(player);
         // The actual comparator used is not important.
-        Comparator headToHeadComparator = new Comparator()
+        Comparator<HeadToHeadResult> headToHeadComparator = new Comparator<HeadToHeadResult>()
         {
-            public int compare(Object obj1, Object obj2)
+            public int compare(HeadToHeadResult result1, HeadToHeadResult result2)
             {
-                HeadToHeadResult result1 = (HeadToHeadResult) obj1;
-                HeadToHeadResult result2 = (HeadToHeadResult) obj2;
                 // Sort by aggregate pay-off, doesn't really matter which field we choose.
                 return result1.getAggregatePayOff() - result2.getAggregatePayOff();
             }
