@@ -1,0 +1,111 @@
+<!--
+  Ant build script for IPD framework (you can download Jakarta Ant from http://jakarta.apache.org/ant).
+  Author: Daniel Dyer
+-->
+
+<project name="ipd" default="dist" basedir=".">
+
+  <!-- Define build properties. -->
+  <property name="src.dir" value="src"/>
+  <property name="lib.dir" value="lib"/>
+  <property name="etc.dir" value="etc"/>
+  <property name="build.dir" value="build"/>
+  <property name="classes.dir" value="${build.dir}/classes"/>
+  <property name="project.jar" value="ipd.jar"/>
+  <property name="deploy.dir" value="deploy"/>
+  <property name="test.results.dir" value="test-results"/>
+  <property name="docs.dir" value="docs"/>
+  
+  <!-- Build class path. -->
+  <path id="base.path">
+    <pathelement location="${classes.dir}"/>
+    <pathelement location="${lib.dir}/anguish.jar" />
+    <pathelement location="${lib.dir}/junit.jar" />
+    <pathelement location="${lib.dir}/log4j-1.2.7.jar" />
+    <pathelement location="${lib.dir}/jfreechart-0.9.20.jar" />
+    <pathelement location="${lib.dir}/jcommon-0.9.5.jar" />
+  </path>
+
+  <!-- Rebuilds the project from scratch. -->
+  <target name="all" depends="clean,dist" description="Re-builds the project from scratch."/>
+
+  <!-- Removes all files created by this build process. -->
+  <target name="clean" description="Deletes all files created by the build process.">
+    <delete dir="${build.dir}"/>
+    <delete dir="${deploy.dir}"/>
+    <delete dir="${test.results.dir}"/>
+    <delete dir="${docs.dir}"/>
+  </target>
+
+  <!-- Compiles all Java source files and copies all non-source resources into the build
+       location. -->
+  <target name="compile" description="Compiles all Java source files.">
+    <mkdir dir="${classes.dir}"/>
+    <javac srcdir="${src.dir}/java"
+           destdir="${classes.dir}"
+           classpathref="base.path"
+           source="1.4"
+           target="1.4"
+           debug="on"
+           optimize="off"
+           deprecation="on"/>
+  </target>
+
+  <!-- Packages and deploys all distributable files. -->
+  <target name="dist" depends="compile" description="Builds JAR file and deploys all files.">
+    <mkdir dir="${deploy.dir}"/>
+    <jar jarfile="${deploy.dir}/${project.jar}" basedir="${classes.dir}" manifest="${src.dir}/java/MANIFEST.MF"/>
+    <copy todir="${deploy.dir}" includeEmptyDirs="false">
+      <fileset dir="${lib.dir}" includes="*.jar" excludes="junit.jar" />
+      <fileset dir="${src.dir}/bin" includes="*.sh"/>
+      <fileset dir="${src.dir}/conf" includes="*.*"/>
+      <fileset dir="${src.dir}/html" includes="*.html"/>
+    </copy>
+    <chmod dir="${deploy.dir}" perm="ugo+rx" includes="**/*.sh"/>
+  </target>
+  
+  
+  <!-- Executes automated unit tests and generates a results report. -->
+  <target name="test" depends="compile" description="Executes unit tests and generates a report.">
+    <delete dir="${test.results.dir}"/>
+    <mkdir dir="${test.results.dir}"/>
+    <junit fork="yes">
+      <classpath refid="base.path"/>
+      <formatter type="xml"/>
+      <batchtest todir="${test.results.dir}">
+        <fileset dir="${src.dir}/java">
+          <include name="**/unittests/*Test.java"/>
+        </fileset>
+      </batchtest>
+    </junit>
+    <delete dir="${docs.dir}/test-report"/>
+    <mkdir dir="${docs.dir}/test-report"/>
+    <junitreport todir="${test.results.dir}">
+      <fileset dir="${test.results.dir}">
+        <include name="TEST-*.xml"/>
+      </fileset>
+      <report format="frames" todir="${docs.dir}/test-report"/>
+    </junitreport>
+  </target>
+  
+  <!-- Generate Java API documentation. -->
+  <target name="docs" description="Generate Javadoc API documentation.">
+    <delete dir="${docs.dir}/api"/>
+    <mkdir dir="${docs.dir}/api"/>
+    <javadoc sourcepath="${src.dir}/java"
+      destdir="${docs.dir}/api"
+      classpathref="base.path"
+      packagenames="au.*"
+      author="true"
+      version="true"
+      windowtitle="IPD Framework API Documentation"
+      doctitle="IPD Framework API Documentation"
+      additionalparam="-source 1.4"
+      >
+      <link offline="true" href="http://java.sun.com/j2se/1.4.2/docs/api/" packagelistLoc="${etc.dir}/package-lists/j2se"/>
+      <link offline="true" href="http://anguish.sourceforge.net/docs/api/" packagelistLoc="${etc.dir}/package-lists/anguish"/>
+      <header><![CDATA[<span style='font-family: sans-serif; font-style: normal;'><b>IPD Framework</b><br><br></span>]]></header>
+    </javadoc>
+  </target>
+  
+</project>
