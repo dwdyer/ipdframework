@@ -56,6 +56,7 @@ public class RoundRobinResult extends HeadToHeadResult
     }
     
     
+    @Override
     public String toString()
     {
         return player.getName();

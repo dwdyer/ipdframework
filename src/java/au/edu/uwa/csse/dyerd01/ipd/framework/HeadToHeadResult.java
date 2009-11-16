@@ -82,6 +82,7 @@ public class HeadToHeadResult
     }
     
     
+    @Override
     public String toString()
     {
         return "vs. " + opponent.getName();

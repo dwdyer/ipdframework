@@ -13,6 +13,7 @@ import au.edu.uwa.csse.dyerd01.ipd.strategies.TitForTat;
 import java.io.File;
 import java.io.FileInputStream;
 import java.io.IOException;
+import java.io.Serializable;
 import java.util.Arrays;
 import java.util.Comparator;
 import java.util.EventListener;
@@ -124,7 +125,6 @@ public class Evolver
             }
             else
             {
-                assert roundRobinResults != null;
                 logger.debug("Producing offspring generation...");
                 population = generateOffspringGeneration(population, roundRobinResults);
             }
@@ -151,23 +151,23 @@ public class Evolver
             double maxRatio = 0;
             double minRatio = 1;
             double aggregateRatio = 0;
-            for (int j = 0; j < roundRobinResults.length; j++)
+            for (ResultsWrapper roundRobinResult : roundRobinResults)
             {
-                double playerAverage = roundRobinResults[j].getResult().getAveragePayOff();
-                aggregatePayOff += roundRobinResults[j].getResult().getAggregatePayOff();
-                aggregateIterations += roundRobinResults[j].getResult().getIterations();
-                aggregateScoreAgainstFixedPlayer += roundRobinResults[j].getScoreAgainstFixedOpponent();
-                aggregateFitness += roundRobinResults[j].getFitness();
+                double playerAverage = roundRobinResult.getResult().getAveragePayOff();
+                aggregatePayOff += roundRobinResult.getResult().getAggregatePayOff();
+                aggregateIterations += roundRobinResult.getResult().getIterations();
+                aggregateScoreAgainstFixedPlayer += roundRobinResult.getScoreAgainstFixedOpponent();
+                aggregateFitness += roundRobinResult.getFitness();
                 best = Math.max(best, playerAverage);
                 if (fixedPlayerResult != null && playerAverage > fixedPlayerResult.getAveragePayOff())
                 {
                     fixedPlayerRank++;
                 }
-                
+
                 // Calculate figures relating to co-evolved fitness ratio.
                 if (coEvolvedFitnessFactor)
                 {
-                    double playerRatio = ((EvolvedPlayer) roundRobinResults[j].getResult().getPlayer()).getFitnessRatio();
+                    double playerRatio = ((EvolvedPlayer) roundRobinResult.getResult().getPlayer()).getFitnessRatio();
                     maxRatio = Math.max(maxRatio, playerRatio);
                     minRatio = Math.min(minRatio, playerRatio);
                     aggregateRatio += playerRatio;
@@ -190,9 +190,9 @@ public class Evolver
             {
                 // Calculate ratio standard deviation.
                 double diffs = 0;
-                for (int j = 0; j < roundRobinResults.length; j++)
+                for (ResultsWrapper roundRobinResult : roundRobinResults)
                 {
-                    diffs += Math.abs(averageRatio - ((EvolvedPlayer) roundRobinResults[j].getResult().getPlayer()).getFitnessRatio());
+                    diffs += Math.abs(averageRatio - ((EvolvedPlayer) roundRobinResult.getResult().getPlayer()).getFitnessRatio());
                 }
                 double ratioStandardDeviation = diffs / roundRobinResults.length;
                 results[i] = new EvolutionResult(population[0],
@@ -314,9 +314,9 @@ public class Evolver
     private int[] classifyPopulation(EvolvedPlayer[] population)
     {
         int[] classifications = new int[32]; // Hard-coded for history length of 1.
-        for (int i = 0; i < population.length; i++)
+        for (EvolvedPlayer player : population)
         {
-            classifications[population[i].classify()]++;
+            classifications[player.classify()]++;
         }
         return classifications;
     }
@@ -337,9 +337,9 @@ public class Evolver
     protected void fireNotifyProgress()
     {
         EventListener[] interested = listeners.getListeners(EvolutionListener.class);
-        for (int i = 0; i < interested.length; i++)
+        for (EventListener listener : interested)
         {
-            ((EvolutionListener) interested[i]).notifyGenerationProcessed();
+            ((EvolutionListener) listener).notifyGenerationProcessed();
         }
     }
     
@@ -350,14 +350,14 @@ public class Evolver
         private final double scoreAgainstFixedOpponent;
         private final double fitness;
         
-        public ResultsWrapper(RoundRobinResult result)
+        ResultsWrapper(RoundRobinResult result)
         {
             this.result = result;
             this.scoreAgainstFixedOpponent = 0;
             this.fitness = result.getAveragePayOff();
         }
         
-        public ResultsWrapper(RoundRobinResult result, double scoreAgainstFixedOpponent)
+        ResultsWrapper(RoundRobinResult result, double scoreAgainstFixedOpponent)
         {
             EvolvedPlayer player = (EvolvedPlayer) result.getPlayer();
             this.result = result;
@@ -382,12 +382,10 @@ public class Evolver
         }
     }
     
-    private static class ResultsComparator implements Comparator
+    private static class ResultsComparator implements Comparator<ResultsWrapper>, Serializable
     {
-        public int compare(Object obj1, Object obj2)
+        public int compare(ResultsWrapper result1, ResultsWrapper result2)
         {
-            ResultsWrapper result1 = (ResultsWrapper) obj1;
-            ResultsWrapper result2 = (ResultsWrapper) obj2;
             return (int) (result1.getFitness() - result2.getFitness()) * 100000;
         }
     }
@@ -461,7 +459,7 @@ public class Evolver
     private static void saveResults(EvolutionResult[] results)
     {
         // Build up file name from parameters.
-        StringBuffer fileName = new StringBuffer();
+        StringBuilder fileName = new StringBuilder();
         fileName.append(param_pure ? "pure" : "impure");
         fileName.append('_');
         fileName.append(param_populationSize);

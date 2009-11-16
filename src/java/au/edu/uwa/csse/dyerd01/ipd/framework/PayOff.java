@@ -8,10 +8,10 @@ package au.edu.uwa.csse.dyerd01.ipd.framework;
 public final class PayOff
 {
     // The only valid pay-offs are defined here:
-    public static PayOff EXPLOITATION_WINNER = new PayOff(5);
-    public static PayOff MUTUAL_COOPERATION = new PayOff(3);
-    public static PayOff MUTUAL_DEFECTION = new PayOff(1);
-    public static PayOff EXPLOITATION_LOSER = new PayOff(0);
+    public static final PayOff EXPLOITATION_WINNER = new PayOff(5);
+    public static final PayOff MUTUAL_COOPERATION = new PayOff(3);
+    public static final PayOff MUTUAL_DEFECTION = new PayOff(1);
+    public static final PayOff EXPLOITATION_LOSER = new PayOff(0);
 
     private final int value;
     
@@ -26,6 +26,7 @@ public final class PayOff
     }
     
     
+    @Override
     public String toString()
     {
         return "PayOff_" + value;

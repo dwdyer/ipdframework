@@ -29,10 +29,10 @@ public class PopulationCompositionChartPanel extends JPanel
 {
     private static final Logger logger = Logger.getLogger(PopulationCompositionChartPanel.class);
     
-    private static final String[] STRATEGY_NAMES = new String[]{"0(AD)", "1", "2", "3", "4(AD)", "5", "6", "7",
-                                                                "8(AD)", "9(SPav)", "10(STFT)", "11", "12(AD)", "13", "14", "15",
-                                                                "16", "17", "18", "19", "20", "21", "22", "23",
-                                                                "24(Grim)", "25(Pav)", "26(TFT)", "27", "28(AC)", "29(AC)", "30(AC)", "31(AC)"};
+    private static final String[] STRATEGY_NAMES = {"0(AD)", "1", "2", "3", "4(AD)", "5", "6", "7",
+                                                    "8(AD)", "9(SPav)", "10(STFT)", "11", "12(AD)", "13", "14", "15",
+                                                    "16", "17", "18", "19", "20", "21", "22", "23",
+                                                    "24(Grim)", "25(Pav)", "26(TFT)", "27", "28(AC)", "29(AC)", "30(AC)", "31(AC)"};
     
     
     private final JCheckBox[] filters = new JCheckBox[STRATEGY_NAMES.length];
@@ -188,7 +188,7 @@ public class PopulationCompositionChartPanel extends JPanel
     
     private static final class ScrollablePanel extends JPanel implements Scrollable
     {
-        public ScrollablePanel(LayoutManager layout)
+        ScrollablePanel(LayoutManager layout)
         {
             super(layout);
         }

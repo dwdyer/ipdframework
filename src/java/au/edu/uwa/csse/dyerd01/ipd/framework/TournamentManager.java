@@ -27,7 +27,9 @@ import au.edu.uwa.csse.dyerd01.ipd.strategies.Strategy30;
 import au.edu.uwa.csse.dyerd01.ipd.strategies.SuspiciousTitForTat;
 import au.edu.uwa.csse.dyerd01.ipd.strategies.TitFor2Tats;
 import au.edu.uwa.csse.dyerd01.ipd.strategies.TitForTat;
+import java.util.Arrays;
 import java.util.HashMap;
+import java.util.List;
 import java.util.Map;
 import org.apache.log4j.Logger;
 
@@ -46,29 +48,30 @@ public class TournamentManager
     private static final Logger logger = Logger.getLogger(TournamentManager.class);
 
     public static final int HISTORY_LENGTH = 1;
-    private static final Class[] AVAILABLE_STRATEGIES = new Class[]{AlwaysCooperate.class,
-                                                                    AlwaysDefect.class,
-                                                                    ApproximatingOpponentModeller.class,
-                                                                    DeferredTitForTat.class,
-                                                                    Gradual.class,
-                                                                    Grim.class,
-                                                                    HarshGradual.class,
-                                                                    Majority.class,
-                                                                    ModellerNemesis.class,
-                                                                    Pavlov.class,
-                                                                    PeriodicCCD.class,
-                                                                    PeriodicDDC.class,
-                                                                    Prober.class,
-                                                                    PunitiveOpponentModeller.class,
-                                                                    Random.class,
-                                                                    SimpleOpponentModeller.class,
-                                                                    Strategy18.class,
-                                                                    Strategy27.class,
-                                                                    Strategy30.class,
-                                                                    SuspiciousTitForTat.class,
-                                                                    TitForTat.class,
-                                                                    TitFor2Tats.class};
-    
+    private static final List<Class<? extends Player>> AVAILABLE_STRATEGIES
+        = Arrays.<Class<? extends Player>>asList(AlwaysCooperate.class,
+                                                 AlwaysDefect.class,
+                                                 ApproximatingOpponentModeller.class,
+                                                 DeferredTitForTat.class,
+                                                 Gradual.class,
+                                                 Grim.class,
+                                                 HarshGradual.class,
+                                                 Majority.class,
+                                                 ModellerNemesis.class,
+                                                 Pavlov.class,
+                                                 PeriodicCCD.class,
+                                                 PeriodicDDC.class,
+                                                 Prober.class,
+                                                 PunitiveOpponentModeller.class,
+                                                 Random.class,
+                                                 SimpleOpponentModeller.class,
+                                                 Strategy18.class,
+                                                 Strategy27.class,
+                                                 Strategy30.class,
+                                                 SuspiciousTitForTat.class,
+                                                 TitForTat.class,
+                                                 TitFor2Tats.class);
+
     /**
      * Private constructor, prevents direct instantiation.
      */
@@ -83,7 +86,7 @@ public class TournamentManager
     }
     
     
-    public Class[] getAvailableStrategies()
+    public List<Class<? extends Player>> getAvailableStrategies()
     {
         return AVAILABLE_STRATEGIES;
     }

@@ -18,7 +18,7 @@ import net.sourceforge.anguish.treetable.TreeTableModel;
  */
 public class TournamentResultsPanel extends JPanel
 {
-    private static final SortCriterion[] SORT_CRITERIA = new SortCriterion[]{new SortCriterion(TournamentResultsTableModel.PAYOFF_COLUMN, false)};
+    private static final SortCriterion[] SORT_CRITERIA = {new SortCriterion(TournamentResultsTableModel.PAYOFF_COLUMN, false)};
 
     private TournamentResultsTableModel resultsTableModel = new TournamentResultsTableModel(new RoundRobinResult[0]);
     private final TreeTable resultsTable = new TreeTable(resultsTableModel, new TreeTableRenderer(resultsTableModel));
@@ -44,7 +44,7 @@ public class TournamentResultsPanel extends JPanel
  
     private static final class TreeTableRenderer extends AbstractTreeTableCellRenderer
     {
-        public TreeTableRenderer(TreeTableModel model)
+        TreeTableRenderer(TreeTableModel model)
         {
             super(model);
         }

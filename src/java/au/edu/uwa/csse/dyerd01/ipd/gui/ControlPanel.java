@@ -8,7 +8,6 @@ import au.edu.uwa.csse.dyerd01.ipd.framework.evolution.EvolutionListener;
 import au.edu.uwa.csse.dyerd01.ipd.framework.evolution.EvolutionResult;
 import java.awt.BorderLayout;
 import java.awt.Font;
-import java.awt.Frame;
 import java.awt.GridBagConstraints;
 import java.awt.GridBagLayout;
 import java.awt.Insets;
@@ -16,6 +15,8 @@ import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.awt.event.ItemEvent;
 import java.awt.event.ItemListener;
+import java.util.ArrayList;
+import java.util.List;
 import javax.swing.BorderFactory;
 import javax.swing.ButtonGroup;
 import javax.swing.DefaultListModel;
@@ -81,14 +82,14 @@ public class ControlPanel extends JPanel
                                                                0, 0);
         
         // Wrap strategy classes for display in combo box.
-        Class[] strategies = TournamentManager.getInstance().getAvailableStrategies();
-        StrategyClassWrapper[] wrappers = new StrategyClassWrapper[strategies.length];
-        for (int i = 0; i < strategies.length; i++)
+        List<Class<? extends Player>> strategies = TournamentManager.getInstance().getAvailableStrategies();
+        List<StrategyClassWrapper> wrappers = new ArrayList<StrategyClassWrapper>();
+        for (Class<? extends Player> strategy : strategies)
         {
-            wrappers[i] = new StrategyClassWrapper(strategies[i]);
+            wrappers.add(new StrategyClassWrapper(strategy));
         }
-        
-        final JComboBox strategySelector = new JComboBox(wrappers);
+
+        final JComboBox strategySelector = new JComboBox(wrappers.toArray());
         final DefaultListModel selectedStrategiesModel = new DefaultListModel();
         final JList selectedStrategies = new JList(selectedStrategiesModel);
         JButton addStrategyButton = new JButton("Add");
@@ -248,13 +249,13 @@ public class ControlPanel extends JPanel
         opponentPanel.add(playFixedOpponent, constraints);
         
         // Wrap strategy classes for display in combo box.
-        Class[] strategies = TournamentManager.getInstance().getAvailableStrategies();
-        StrategyClassWrapper[] wrappers = new StrategyClassWrapper[strategies.length];
-        for (int i = 0; i < strategies.length; i++)
+        List<Class<? extends Player>> strategies = TournamentManager.getInstance().getAvailableStrategies();
+        List<StrategyClassWrapper> wrappers = new ArrayList<StrategyClassWrapper>();
+        for (Class<? extends Player> strategy : strategies)
         {
-            wrappers[i] = new StrategyClassWrapper(strategies[i]);
+            wrappers.add(new StrategyClassWrapper(strategy));
         }
-        final JComboBox opponentSelector = new JComboBox(wrappers);
+        final JComboBox opponentSelector = new JComboBox(wrappers.toArray());
 
         opponentPanel.add(opponentSelector, constraints);        
         final JCheckBox fitnessCheckBox = new JCheckBox("Include in fitness scores");

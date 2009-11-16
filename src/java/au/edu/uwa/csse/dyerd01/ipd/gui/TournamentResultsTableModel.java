@@ -40,12 +40,14 @@ public class TournamentResultsTableModel extends AbstractTreeTableModel implemen
     }
     
     
+    @Override
     public String getColumnName(int column)
     {
         return COLUMN_NAMES[column];
     }
     
     
+    @Override
     public Class<?> getColumnClass(int column)
     {
         return COLUMN_TYPES[column];

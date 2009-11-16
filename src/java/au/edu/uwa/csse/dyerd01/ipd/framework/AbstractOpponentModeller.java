@@ -8,6 +8,7 @@ public abstract class AbstractOpponentModeller extends AbstractPlayer
 {
     protected OpponentModel model = null;
     
+    @Override
     public void reset()
     {
         model = createNewOpponentModel(TournamentManager.HISTORY_LENGTH);

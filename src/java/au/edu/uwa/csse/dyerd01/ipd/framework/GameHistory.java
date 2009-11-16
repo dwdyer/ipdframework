@@ -190,7 +190,7 @@ public class GameHistory
         public final PayOff player1PayOff;
         public final PayOff player2PayOff;
         
-        public HistoryEntry(Action player1Action, Action player2Action)
+        HistoryEntry(Action player1Action, Action player2Action)
         {
             this.player1Action = player1Action;
             this.player2Action = player2Action;
