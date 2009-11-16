@@ -9,8 +9,8 @@ import javax.swing.JProgressBar;
 
 public class ProgressDialog extends JDialog
 {
-    private JProgressBar progressBar;
-    private JLabel statusLabel = new JLabel("Evaluating generation 0...   ");
+    private final JProgressBar progressBar;
+    private final JLabel statusLabel = new JLabel("Evaluating generation 0...   ");
     private int value = 0;
     
     public ProgressDialog(Frame owner, int noOfIncrements)
@@ -32,7 +32,7 @@ public class ProgressDialog extends JDialog
         statusLabel.setText("Evaluating generation " + value + "...");
         if (value >= progressBar.getMaximum())
         {
-            hide();
+            setVisible(false);
             dispose();
         }
     }

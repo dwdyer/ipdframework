@@ -59,7 +59,6 @@
       <fileset dir="${lib.dir}" includes="*.jar" excludes="junit.jar" />
       <fileset dir="${src.dir}/bin" includes="*.sh"/>
       <fileset dir="${src.dir}/conf" includes="*.*"/>
-      <fileset dir="${src.dir}/html" includes="*.html"/>
     </copy>
     <chmod dir="${deploy.dir}" perm="ugo+rx" includes="**/*.sh"/>
   </target>
