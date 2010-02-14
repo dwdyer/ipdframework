@@ -21,6 +21,7 @@ public class Grim extends AbstractPlayer
     }
     
     
+    @Override
     public void reset()
     {
         nextAction = Action.COOPERATE;

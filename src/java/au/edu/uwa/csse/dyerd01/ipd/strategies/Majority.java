@@ -19,6 +19,7 @@ public class Majority extends AbstractPlayer
     }
     
     
+    @Override
     public void reset()
     {
         counter = 0;

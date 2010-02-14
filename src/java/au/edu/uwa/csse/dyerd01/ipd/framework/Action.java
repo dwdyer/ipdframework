@@ -22,6 +22,6 @@ public final class Action
     
     
     // The only valid actions are defined here:
-    public static Action COOPERATE = new Action("Cooperate");
-    public static Action DEFECT = new Action("Defect");
+    public static final Action COOPERATE = new Action("Cooperate");
+    public static final Action DEFECT = new Action("Defect");
 }

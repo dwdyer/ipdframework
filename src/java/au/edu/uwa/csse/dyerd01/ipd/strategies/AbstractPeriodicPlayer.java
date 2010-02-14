@@ -18,6 +18,7 @@ public abstract class AbstractPeriodicPlayer extends AbstractPlayer
         this.sequence = sequence;
     }
     
+    @Override
     public void reset()
     {
         index = -1;

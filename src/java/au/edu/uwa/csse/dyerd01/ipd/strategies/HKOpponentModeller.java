@@ -13,7 +13,7 @@ import org.apache.log4j.Logger;
  */
 public class HKOpponentModeller extends AbstractPlayer
 {
-    private static Logger logger = Logger.getLogger(HKOpponentModeller.class);
+    private static final Logger logger = Logger.getLogger(HKOpponentModeller.class);
     
     protected static final double FORGETTING_FACTOR = 0.95;
     protected static final int INCREMENT_VALUE = 1;
@@ -27,6 +27,7 @@ public class HKOpponentModeller extends AbstractPlayer
     }
     
     
+    @Override
     public void reset()
     {
         model = createDefaultModel();
@@ -58,8 +59,8 @@ public class HKOpponentModeller extends AbstractPlayer
         else
         {
             // Update opponent model.
-            Action[] playerHistory = new Action[]{history.getPlayerActionForIteration(this, historyLength - 2),
-                                                  history.getOpponentActionForIteration(this, historyLength - 2)};
+            Action[] playerHistory = {history.getPlayerActionForIteration(this, historyLength - 2),
+                                      history.getOpponentActionForIteration(this, historyLength - 2)};
             model.update(playerHistory, history.getOpponentActionForIteration(this, historyLength - 1));
             playerHistory[0] = history.getPlayerActionForIteration(this, historyLength - 1);
             playerHistory[1] = history.getOpponentActionForIteration(this, historyLength - 1);
@@ -70,9 +71,9 @@ public class HKOpponentModeller extends AbstractPlayer
     
     protected static class OpponentModel
     {
-        private double[][] probabilities;
+        private final double[][] probabilities;
         
-        public OpponentModel(double[][] probabilities)
+        protected OpponentModel(double[][] probabilities)
         {
             this.probabilities = probabilities;
         }

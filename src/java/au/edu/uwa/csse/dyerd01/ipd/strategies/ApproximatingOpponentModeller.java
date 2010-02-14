@@ -16,6 +16,7 @@ public class ApproximatingOpponentModeller extends AbstractOpponentModeller
     }
     
     
+    @Override
     protected OpponentModel createNewOpponentModel(int historyLength)
     {
         return new LookUpTableOpponentModel(this);

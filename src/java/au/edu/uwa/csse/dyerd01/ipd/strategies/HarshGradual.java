@@ -14,12 +14,14 @@ public class HarshGradual extends Gradual
 {
     private static final Logger logger = Logger.getLogger(HarshGradual.class);
     
+    @Override
     public String getName()
     {
         return "HarshGradual";
     }
     
     
+    @Override
     public Action getNextMove(GameHistory history)
     {
         int historyLength = history.getHistoryLength();

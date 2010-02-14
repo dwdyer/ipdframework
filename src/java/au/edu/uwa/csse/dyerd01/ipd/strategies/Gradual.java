@@ -13,7 +13,7 @@ import org.apache.log4j.Logger;
  */
 public class Gradual extends AbstractPlayer
 {
-    private static Logger logger = Logger.getLogger(Gradual.class);
+    private static final Logger logger = Logger.getLogger(Gradual.class);
     
     protected static final int MODE_NORMAL = 0;
     protected static final int MODE_PUNISHMENT = 1;
@@ -30,6 +30,7 @@ public class Gradual extends AbstractPlayer
     }
     
     
+    @Override
     public void reset()
     {
         defectionCount = 0;

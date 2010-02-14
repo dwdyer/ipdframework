@@ -17,6 +17,7 @@ public class PunitiveOpponentModeller extends AbstractOpponentModeller
     }
     
     
+    @Override
     protected OpponentModel createNewOpponentModel(int historyLength)
     {
         return new PunitiveOpponentModel(this);

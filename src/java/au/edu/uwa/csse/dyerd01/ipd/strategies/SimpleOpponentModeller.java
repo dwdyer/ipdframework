@@ -15,6 +15,7 @@ public class SimpleOpponentModeller extends AbstractOpponentModeller
     }
     
     
+    @Override
     protected OpponentModel createNewOpponentModel(int historyLength)
     {
         return new SimpleOpponentModel(this, historyLength);

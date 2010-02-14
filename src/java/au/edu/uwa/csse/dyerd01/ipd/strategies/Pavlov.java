@@ -19,9 +19,9 @@ public class Pavlov extends AbstractPlayer
     }
     
     
+    @Override
     public void reset()
     {
-        // nextAction = Math.random() >= 0.5 ? Action.COOPERATE : Action.DEFECT;
         nextAction = Action.COOPERATE;
     }
     

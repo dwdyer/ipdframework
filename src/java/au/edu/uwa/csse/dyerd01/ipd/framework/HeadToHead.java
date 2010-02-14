@@ -65,7 +65,7 @@ public class HeadToHead implements Runnable
         if (1 - Math.random() <= noiseProbability)
         {
             logger.debug("Noisy move.");
-            move = move == Action.COOPERATE ? Action.DEFECT : Action.COOPERATE;
+            return move == Action.COOPERATE ? Action.DEFECT : Action.COOPERATE;
         }
         return move;
     }

@@ -14,12 +14,14 @@ public class Prober extends TitForTat
 {
     private boolean playAlwaysDefect = false;
     
+    @Override
     public String getName()
     {
         return "Prober";
     }
     
     
+    @Override
     public Action getNextMove(GameHistory history)
     {
         switch (history.getHistoryLength())
