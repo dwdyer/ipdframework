@@ -2,14 +2,16 @@
 package au.edu.uwa.csse.dyerd01.ipd.framework;
 
 /**
- * Defines valid actions for players in the IPD.  Uses Type-Safe Enum pattern
- * from Effective Java by Joshua Bloch (page 104).
+ * Defines valid actions for players in the IPD.
  */
-public final class Action
+public enum Action
 {
+    COOPERATE("Cooperate"),
+    DEFECT("Defect");
+
     private final String name;
     
-    private Action(String name)
+    Action(String name)
     {
         this.name = name;
     }
@@ -19,9 +21,4 @@ public final class Action
     {
         return name;
     }
-    
-    
-    // The only valid actions are defined here:
-    public static final Action COOPERATE = new Action("Cooperate");
-    public static final Action DEFECT = new Action("Defect");
 }

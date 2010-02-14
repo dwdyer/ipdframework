@@ -170,9 +170,10 @@ public class EvolutionResult
     }
     
     
+    @Override
     public String toString()
     {
-        StringBuffer buffer = new StringBuffer("Av: ");
+        StringBuilder buffer = new StringBuilder("Av: ");
         buffer.append(averagePayOff);
         buffer.append(" Best: ");
         buffer.append(bestCandidateAveragePayOff);
@@ -204,7 +205,7 @@ public class EvolutionResult
     
     public String toRecordString()
     {
-        StringBuffer buffer = new StringBuffer();
+        StringBuilder buffer = new StringBuilder();
         buffer.append(averagePayOff);
         buffer.append('\t');
         buffer.append(bestCandidateAveragePayOff);
