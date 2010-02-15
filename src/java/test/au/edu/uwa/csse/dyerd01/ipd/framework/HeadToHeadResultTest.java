@@ -1,8 +1,6 @@
 // $Header: $
-package au.edu.uwa.csse.dyerd01.ipd.unittests;
+package au.edu.uwa.csse.dyerd01.ipd.framework;
 
-import au.edu.uwa.csse.dyerd01.ipd.framework.HeadToHeadResult;
-import au.edu.uwa.csse.dyerd01.ipd.framework.Player;
 import au.edu.uwa.csse.dyerd01.ipd.strategies.AlwaysCooperate;
 import junit.framework.TestCase;
 

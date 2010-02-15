@@ -1,5 +1,5 @@
 // $Header: $
-package au.edu.uwa.csse.dyerd01.ipd.unittests;
+package au.edu.uwa.csse.dyerd01.unittests;
 
 import au.edu.uwa.csse.dyerd01.ipd.strategies.SimpleOpponentModel;
 import junit.framework.TestCase;

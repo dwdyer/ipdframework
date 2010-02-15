@@ -1,11 +1,8 @@
 // $Header: $
-package au.edu.uwa.csse.dyerd01.ipd.unittests;
+package au.edu.uwa.csse.dyerd01.ipd.strategies;
 
 import au.edu.uwa.csse.dyerd01.ipd.framework.Action;
 import au.edu.uwa.csse.dyerd01.ipd.framework.GameHistory;
-import au.edu.uwa.csse.dyerd01.ipd.strategies.AlwaysCooperate;
-import au.edu.uwa.csse.dyerd01.ipd.strategies.AlwaysDefect;
-import au.edu.uwa.csse.dyerd01.ipd.strategies.Gradual;
 import junit.framework.TestCase;
 
 /**

@@ -18,7 +18,8 @@
   
   <!-- Build class path. -->
   <path id="base.path">
-    <pathelement location="${classes.dir}"/>
+    <pathelement location="${classes.dir}/main"/>
+    <pathelement location="${classes.dir}/test"/>
     <pathelement location="${lib.dir}/anguish.jar" />
     <pathelement location="${lib.dir}/junit.jar" />
     <pathelement location="${lib.dir}/log4j-1.2.7.jar" />
@@ -40,9 +41,18 @@
   <!-- Compiles all Java source files and copies all non-source resources into the build
        location. -->
   <target name="compile" description="Compiles all Java source files.">
-    <mkdir dir="${classes.dir}"/>
-    <javac srcdir="${src.dir}/java"
-           destdir="${classes.dir}"
+    <mkdir dir="${classes.dir}/main"/>
+    <javac srcdir="${src.dir}/java/main"
+           destdir="${classes.dir}/main"
+           classpathref="base.path"
+           source="1.5"
+           target="1.5"
+           debug="on"
+           optimize="off"
+           deprecation="on"/>
+    <mkdir dir="${classes.dir}/test"/>
+    <javac srcdir="${src.dir}/java/test"
+           destdir="${classes.dir}/test"
            classpathref="base.path"
            source="1.5"
            target="1.5"
@@ -54,7 +64,7 @@
   <!-- Packages and deploys all distributable files. -->
   <target name="dist" depends="compile" description="Builds JAR file and deploys all files.">
     <mkdir dir="${deploy.dir}"/>
-    <jar jarfile="${deploy.dir}/${project.jar}" basedir="${classes.dir}" manifest="${src.dir}/java/MANIFEST.MF"/>
+    <jar jarfile="${deploy.dir}/${project.jar}" basedir="${classes.dir}/main" manifest="${src.dir}/java/MANIFEST.MF"/>
     <copy todir="${deploy.dir}" includeEmptyDirs="false">
       <fileset dir="${lib.dir}" includes="*.jar" excludes="junit.jar" />
       <fileset dir="${src.dir}/bin" includes="*.sh"/>
@@ -72,7 +82,7 @@
       <classpath refid="base.path"/>
       <formatter type="xml"/>
       <batchtest todir="${test.results.dir}">
-        <fileset dir="${src.dir}/java">
+        <fileset dir="${src.dir}/java/test">
           <include name="**/unittests/*Test.java"/>
         </fileset>
       </batchtest>
