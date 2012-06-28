@@ -2,6 +2,7 @@
 package au.edu.uwa.csse.dyerd01.ipd.gui;
 
 import au.edu.uwa.csse.dyerd01.ipd.framework.RoundRobinResult;
+import au.edu.uwa.csse.dyerd01.swing.sortabletable.SortableTableModel;
 import java.awt.Color;
 import java.awt.Component;
 import java.awt.Font;
@@ -9,7 +10,6 @@ import java.text.DecimalFormat;
 import javax.swing.JLabel;
 import javax.swing.JTable;
 import javax.swing.table.DefaultTableCellRenderer;
-import net.sourceforge.anguish.sortabletable.SortableTableModel;
 
 public class TournamentResultsTableRenderer extends DefaultTableCellRenderer
 {

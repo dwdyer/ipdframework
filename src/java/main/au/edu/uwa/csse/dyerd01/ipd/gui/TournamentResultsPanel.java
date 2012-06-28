@@ -8,10 +8,10 @@ import javax.swing.BorderFactory;
 import javax.swing.JPanel;
 import javax.swing.JScrollPane;
 import javax.swing.JTable;
-import net.sourceforge.anguish.sortabletable.SortCriterion;
-import net.sourceforge.anguish.treetable.AbstractTreeTableCellRenderer;
-import net.sourceforge.anguish.treetable.TreeTable;
-import net.sourceforge.anguish.treetable.TreeTableModel;
+import au.edu.uwa.csse.dyerd01.swing.sortabletable.SortCriterion;
+import au.edu.uwa.csse.dyerd01.swing.treetable.AbstractTreeTableCellRenderer;
+import au.edu.uwa.csse.dyerd01.swing.treetable.TreeTable;
+import au.edu.uwa.csse.dyerd01.swing.treetable.TreeTableModel;
 
 /**
  * @author Daniel Dyer

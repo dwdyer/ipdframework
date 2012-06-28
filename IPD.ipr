@@ -215,6 +215,13 @@
   <component name="ProjectRootManager" version="2" languageLevel="JDK_1_5" assert-keyword="true" jdk-15="true" project-jdk-name="1.5" project-jdk-type="JavaSDK">
     <output url="file://$PROJECT_DIR$/out" />
   </component>
+  <component name="ResourceManagerContainer">
+    <option name="myResourceBundles">
+      <value>
+        <list size="0" />
+      </value>
+    </option>
+  </component>
   <component name="SvnBranchConfigurationManager">
     <option name="myConfigurationMap">
       <map>
@@ -252,13 +259,6 @@
     <library name="JUnit">
       <CLASSES>
         <root url="jar://$PROJECT_DIR$/lib/junit.jar!/" />
-      </CLASSES>
-      <JAVADOC />
-      <SOURCES />
-    </library>
-    <library name="Anguish">
-      <CLASSES>
-        <root url="jar://$PROJECT_DIR$/lib/anguish.jar!/" />
       </CLASSES>
       <JAVADOC />
       <SOURCES />

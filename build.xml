@@ -64,7 +64,9 @@
   <!-- Packages and deploys all distributable files. -->
   <target name="dist" depends="compile" description="Builds JAR file and deploys all files.">
     <mkdir dir="${deploy.dir}"/>
-    <jar jarfile="${deploy.dir}/${project.jar}" basedir="${classes.dir}/main" manifest="${src.dir}/java/MANIFEST.MF"/>
+    <jar jarfile="${deploy.dir}/${project.jar}"
+         basedir="${classes.dir}/main"
+         manifest="${src.dir}/java/MANIFEST.MF"/>
     <copy todir="${deploy.dir}" includeEmptyDirs="false">
       <fileset dir="${lib.dir}" includes="*.jar" excludes="junit.jar" />
       <fileset dir="${src.dir}/bin" includes="*.sh"/>
@@ -112,7 +114,6 @@
       additionalparam="-source 1.5"
       >
       <link offline="true" href="http://java.sun.com/j2se/1.4.2/docs/api/" packagelistLoc="${etc.dir}/package-lists/j2se"/>
-      <link offline="true" href="http://anguish.sourceforge.net/docs/api/" packagelistLoc="${etc.dir}/package-lists/anguish"/>
       <header><![CDATA[<span style='font-family: sans-serif; font-style: normal;'><b>IPD Framework</b><br><br></span>]]></header>
     </javadoc>
   </target>

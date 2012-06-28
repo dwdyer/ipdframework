@@ -3,20 +3,20 @@ package au.edu.uwa.csse.dyerd01.ipd.gui;
 
 import au.edu.uwa.csse.dyerd01.ipd.framework.HeadToHeadResult;
 import au.edu.uwa.csse.dyerd01.ipd.framework.RoundRobinResult;
+import au.edu.uwa.csse.dyerd01.swing.sortabletable.RowComparator;
+import au.edu.uwa.csse.dyerd01.swing.sortabletable.SortCriterion;
+import au.edu.uwa.csse.dyerd01.swing.sortabletable.SortableTableModel;
+import au.edu.uwa.csse.dyerd01.swing.treetable.AbstractTreeTableModel;
+import au.edu.uwa.csse.dyerd01.swing.treetable.TreeTableModel;
 import java.util.Arrays;
-import net.sourceforge.anguish.sortabletable.RowComparator;
-import net.sourceforge.anguish.sortabletable.SortCriterion;
-import net.sourceforge.anguish.sortabletable.SortableTableModel;
-import net.sourceforge.anguish.treetable.AbstractTreeTableModel;
-import net.sourceforge.anguish.treetable.TreeTableModel;
 
 /**
  * @author Daniel Dyer
  */
 public class TournamentResultsTableModel extends AbstractTreeTableModel implements SortableTableModel
 {
-    private static final String[] COLUMN_NAMES = new String[]{"Player", "Iterations", "Aggregate Pay-Off", "Aggregate Opponent Pay-Off", "Margin", "Av. Pay-Off"};
-    private static final Class<?>[] COLUMN_TYPES = new Class[]{TreeTableModel.class, Integer.class, Integer.class, Integer.class, Integer.class, Double.class};
+    private static final String[] COLUMN_NAMES = {"Player", "Iterations", "Aggregate Pay-Off", "Aggregate Opponent Pay-Off", "Margin", "Av. Pay-Off"};
+    private static final Class<?>[] COLUMN_TYPES = {TreeTableModel.class, Integer.class, Integer.class, Integer.class, Integer.class, Double.class};
     public static final int PLAYER_COLUMN = 0;
     public static final int ITERATIONS_COLUMN = 1;
     public static final int PAYOFF_COLUMN = 2;
