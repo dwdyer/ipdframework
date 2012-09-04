@@ -13,8 +13,8 @@ remains in its original less-than-perfect state.  It was my intention to
 replace the primitive evolution engine with the Watchmaker Framework
 (http://watchmaker.uncommons.org) but I've never got around to it.
 
-The code is provided under the terms of the GNU General Public Licence version
-3.0 (http://www.gnu.org/licenses/gpl.html) to anybody who wants to attempt to
-reproduce the results from the above publications or use it for their own IPD
-experiments.
+The code is provided under the terms of the Apache Software Licence version
+2.0 (http://www.apache.org/licenses/LICENSE-2.0.txt) to anybody who wants to
+attempt to reproduce the results from the above publications or use it for their
+own IPD experiments.
 
